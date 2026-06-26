@@ -14,7 +14,7 @@
     }
 
     body {
-      background-color: #ffffff;
+      background-color: #fffff8;
       font-family: 'Montserrat', 'Arial', sans-serif;
       min-height: 100vh;
       display: flex;
@@ -58,18 +58,18 @@
     }
 
     .photo-card {
-      flex: 0 1 280px;        /* базовая ширина карточки, можно менять */
+      flex: 0 1 280px;        /* базовая ширина карточки */
       text-align: center;
     }
 
     .photo-card img {
       width: 100%;
       height: auto;
-      aspect-ratio: 4 / 3;    /* пропорции 4:3 – приятный вид */
+      aspect-ratio: 4 / 3;    /* пропорции 4:3 */
       object-fit: cover;
-      border-radius: 12px;    /* лёгкое скругление, выглядит аккуратно */
+      border-radius: 12px;    /* лёгкое скругление */
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      background-color: #f5f5f5; /* на случай, если картинка не загрузится */
+      background-color: #f5f5f5;
       display: block;
     }
 
@@ -107,38 +107,29 @@
     <!-- Заголовок -->
     <h1>Мои чудесные маленькие друзья</h1>
     <!-- Подзаголовок -->
-    <p class="subheading">Фотография Алексея Трубина</p>
+    <p class="subheading">Фотографии Алексея Трубина</p>
 
     <!-- Три фото в ряд -->
     <div class="gallery">
       <!-- Первое фото -->
       <div class="photo-card">
-        <img 
-          src="https://via.placeholder.com/400x300/CCCCCC/333333?text=Баклан" 
-          alt="Баклан"
-        >
+        <img src="images/DSC_6899-1 копия.jpg" alt="Жёлтая трясогузка">
         <div class="caption">Баклан</div>
       </div>
       <!-- Второе фото -->
       <div class="photo-card">
-        <img 
-          src="https://via.placeholder.com/400x300/CCCCCC/333333?text=Dragonfly" 
-          alt="Dragonfly"
-        >
+        <img src="images/DSC_6576-1 копя.jpg" alt="Натюрморт">
         <div class="caption">Dragonfly</div>
       </div>
       <!-- Третье фото -->
       <div class="photo-card">
-        <img 
-          src="https://via.placeholder.com/400x300/CCCCCC/333333?text=Енот" 
-          alt="Енот"
-        >
+        <img src="images/DSC_7043-1 копия.jpg" alt="Чёрный дрозд">
         <div class="caption">Енот</div>
       </div>
     </div>
 
     <!-- Финальная фраза -->
-    <p class="thanks">Большое спасибо за внимание</p>
+    <p class="thanks">Большое спасибо за внимание!</p>
   </div>
 </body>
 </html>
