@@ -63,13 +63,99 @@
       margin-right: 8px;
     }
 
+    /* ===== Приветственный блок ===== */
+    .welcome {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      text-align: left;
+      margin-bottom: 30px;
+      background: #f9f9f2;
+      padding: 20px 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .welcome-photo {
+      flex-shrink: 0;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .welcome-text h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .welcome-text p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ===== Меню разделов ===== */
+    .nav-menu {
+      margin-bottom: 40px;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 20px;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      display: inline;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-menu a:hover {
+      color: #000;
+      border-bottom-color: #888;
+    }
+
+    /* Секретная ссылка — особый стиль */
+    .nav-menu a.secret {
+      color: #b8860b;
+      font-weight: 600;
+    }
+    .nav-menu a.secret:hover {
+      color: #d4a017;
+      border-bottom-color: #b8860b;
+    }
+
+    /* Разделители между пунктами (можно использовать псевдоэлемент) */
+    .nav-menu li:not(:last-child)::after {
+      content: "|";
+      color: #ccc;
+      margin-left: 20px;
+    }
+
     /* ===== Заголовки ===== */
     h1 {
       font-size: 2.8rem;
       font-weight: 600;
       letter-spacing: 1px;
       color: #222;
-      margin-bottom: 1.2rem;   /* увеличен отступ перед подзаголовком */
+      margin-bottom: 1.2rem;
     }
 
     .subheading {
@@ -138,6 +224,22 @@
 
     /* ===== Адаптив для мобильных ===== */
     @media (max-width: 700px) {
+      .welcome {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+      .welcome-photo {
+        width: 100px;
+        height: 100px;
+      }
+      .welcome-text h2 {
+        font-size: 1.5rem;
+      }
+      .welcome-text p {
+        font-size: 1rem;
+      }
+
       .photo-card {
         flex: 0 1 100%;
         max-width: 400px;
@@ -147,6 +249,13 @@
       }
       .lang-switch {
         justify-content: center;
+      }
+
+      .nav-menu ul {
+        gap: 6px 12px;
+      }
+      .nav-menu li:not(:last-child)::after {
+        margin-left: 12px;
       }
     }
   </style>
@@ -161,6 +270,27 @@
 
     <!-- ========== РУССКАЯ ВЕРСИЯ ========== -->
     <div id="lang-ru" class="lang-content active">
+      <!-- Приветственный блок -->
+      <div class="welcome">
+        <img class="welcome-photo" src="images/me.jpg" alt="Фото Алексея Трубина">
+        <div class="welcome-text">
+          <h2>Привет! Вы зашли на сайт Алексея Трубина</h2>
+          <p>Это мой личный уголок в интернете. Очень рад приветствовать вас здесь. Заходите, читайте, смотрите! Будет познавательно и уютно!</p>
+        </div>
+      </div>
+
+      <!-- Меню разделов -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Птицы</a></li>
+          <li><a href="#">Макро</a></li>
+          <li><a href="#">Путешествия</a></li>
+          <li><a href="#">Научно-популярные рассказы</a></li>
+          <li><a href="#" class="secret">Секрет</a></li>
+        </ul>
+      </nav>
+
+      <!-- Заголовок и галерея (как было) -->
       <h1>Мои чудесные маленькие друзья</h1>
       <p class="subheading">Фотографии Алексея Трубина</p>
       <div class="gallery">
@@ -182,6 +312,26 @@
 
     <!-- ========== АНГЛИЙСКАЯ ВЕРСИЯ ========== -->
     <div id="lang-en" class="lang-content">
+      <!-- Welcome block -->
+      <div class="welcome">
+        <img class="welcome-photo" src="images/me.jpg" alt="Photo of Alexey Trubin">
+        <div class="welcome-text">
+          <h2>Hello! You've reached Alexey Trubin's site</h2>
+          <p>This is my personal corner on the internet. I'm very glad to welcome you here. Come in, read, watch! It will be informative and cozy!</p>
+        </div>
+      </div>
+
+      <!-- Navigation menu (translated) -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Birds</a></li>
+          <li><a href="#">Macro</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Popular science stories</a></li>
+          <li><a href="#" class="secret">Secret</a></li>
+        </ul>
+      </nav>
+
       <h1>My Wonderful Little Friends</h1>
       <p class="subheading">Photographs by Alexey Trubin</p>
       <div class="gallery">
@@ -209,17 +359,14 @@
       const enBlock = document.getElementById('lang-en');
 
       function setLanguage(lang) {
-        // Скрываем оба блока
         ruBlock.classList.remove('active');
         enBlock.classList.remove('active');
-        // Показываем нужный
         if (lang === 'en') {
           enBlock.classList.add('active');
         } else {
           ruBlock.classList.add('active');
         }
 
-        // Обновляем активную кнопку
         buttons.forEach(btn => {
           btn.classList.remove('active');
           if (btn.dataset.lang === lang) {
@@ -236,12 +383,11 @@
         });
       });
 
-      // При загрузке проверяем сохранённый язык
       const savedLang = localStorage.getItem('preferred_lang');
       if (savedLang && (savedLang === 'ru' || savedLang === 'en')) {
         setLanguage(savedLang);
       } else {
-        setLanguage('ru'); // по умолчанию русский
+        setLanguage('ru');
       }
     })();
   </script>
