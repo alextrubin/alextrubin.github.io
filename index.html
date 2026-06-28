@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: ru
 title: "Главная"
 ---
 
@@ -8,28 +7,26 @@ title: "Главная"
 <div class="welcome">
   <img class="welcome-photo" src="{{ '/images/me.jpg' | relative_url }}" alt="Фото Алексея Трубина">
   <div class="welcome-text">
-    <h2>{{ site.data.translations[page.lang].welcome_title }}</h2>
-    <p>{{ site.data.translations[page.lang].welcome_text }}</p>
+    <h2>Привет! Вы зашли на сайт Алексея Трубина</h2>
+    <p>Это мой личный уголок в интернете. Очень рад приветствовать вас здесь. Заходите, читайте, смотрите! Будет познавательно и уютно!</p>
   </div>
 </div>
-
-<!-- Меню навигации уже включено через include, поэтому здесь его нет -->
 
 <!-- Заголовок и галерея -->
-<h1>{{ site.data.translations[page.lang].main_title }}</h1>
-<p class="subheading">{{ site.data.translations[page.lang].subheading }}</p>
+<h1>Мои чудесные маленькие друзья</h1>
+<p class="subheading">Фотографии Алексея Трубина</p>
 <div class="gallery">
   <div class="photo-card">
-    <img src="{{ '/images/DSC_6899-1 копия.jpg' | relative_url }}" alt="Yellow Wagtail">
-    <div class="caption">{{ site.data.translations[page.lang].photo1_caption }}</div>
+    <img src="{{ '/images/DSC_6899-1 копия.jpg' | relative_url }}" alt="Жёлтая трясогузка">
+    <div class="caption">Жёлтая трясогузка</div>
   </div>
   <div class="photo-card">
-    <img src="{{ '/images/DSC_6576-1 копя.jpg' | relative_url }}" alt="Still Life">
-    <div class="caption">{{ site.data.translations[page.lang].photo2_caption }}</div>
+    <img src="{{ '/images/DSC_6576-1 копя.jpg' | relative_url }}" alt="Натюрморт">
+    <div class="caption">Натюрморт</div>
   </div>
   <div class="photo-card">
-    <img src="{{ '/images/DSC_7043-1 копия.jpg' | relative_url }}" alt="Blackbird">
-    <div class="caption">{{ site.data.translations[page.lang].photo3_caption }}</div>
+    <img src="{{ '/images/DSC_7043-1 копия.jpg' | relative_url }}" alt="Чёрный дрозд">
+    <div class="caption">Чёрный дрозд</div>
   </div>
 </div>
-<p class="thanks">{{ site.data.translations[page.lang].thanks }}</p>
+<p class="thanks">Большое спасибо за внимание!</p>
