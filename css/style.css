@@ -250,3 +250,107 @@
         margin-left: 12px;
       }
     }
+
+
+
+/* Бахаем галерею цветов */
+/* ===== Сетка для цветов ===== */
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.grid-item {
+  aspect-ratio: 1 / 1; /* Квадратные ячейки */
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0e8;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Лайтбокс ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.lightbox-caption {
+  color: #eee;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  max-width: 80%;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.close-lightbox:hover {
+  color: #aaa;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 700px) {
+  .flower-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+  .lightbox-image {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+  .lightbox-caption {
+    font-size: 1rem;
+  }
+  .close-lightbox {
+    top: 15px;
+    right: 20px;
+    font-size: 2.5rem;
+  }
+}
