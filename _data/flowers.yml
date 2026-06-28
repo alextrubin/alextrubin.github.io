@@ -1,0 +1,11 @@
+- image: /images/flowers/001.jpg
+  caption: "Одуванчик (Taraxacum officinale)"
+- image: /images/flowers/002.jpg
+  caption: "Ромашка (Matricaria chamomilla)"
+- image: /images/flowers/003.jpg
+  caption: "Василёк (Centaurea cyanus)"
+- image: /images/flowers/004.jpg
+  caption: "Клевер (Trifolium repens)"
+- image: /images/flowers/005.jpg
+  caption: "Лютик (Ranunculus acris)"
+# ... и так далее, сколько нужно
