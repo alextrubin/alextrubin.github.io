@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Макрофотографии растений"
+---
+
+<h1>Макрофотографии растений</h1>
+<p class="subheading">Красота в деталях</p>
+
+<div class="flower-grid">
+  {% for flower in site.data.flowers %}
+    <div class="grid-item">
+      <a href="#" class="lightbox-trigger" data-image="{{ flower.image }}" data-caption="{{ flower.caption }}">
+        <img src="{{ flower.image }}" alt="{{ flower.caption }}" loading="lazy">
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Модальное окно лайтбокса -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-image" id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
