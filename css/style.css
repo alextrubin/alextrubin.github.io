@@ -354,3 +354,47 @@
     font-size: 2.5rem;
   }
 }
+
+
+/* ===== Обёртка для sticky footer ===== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0; /* убираем отступы у body, переносим их на .container */
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 40px 20px; /* переносим паддинг с body сюда */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* занимает всю высоту */
+}
+
+main {
+  flex: 1; /* растягивает основное содержимое, прижимая футер вниз */
+}
+
+/* ===== Оформление футера ===== */
+.site-footer {
+  margin-top: 40px;         /* отступ от контента */
+  padding: 20px 0;
+  border-top: 2px solid #e0e0d8;  /* разделительная линия */
+  background-color: #fafaf5;     /* очень светлый фон (можно изменить) */
+  border-radius: 16px;           /* скругление углов (опционально) */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Если хочешь добавить иконки соцсетей – можно позже */
