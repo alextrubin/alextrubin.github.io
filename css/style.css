@@ -398,3 +398,9 @@ main {
 }
 
 /* Если хочешь добавить иконки соцсетей – можно позже */
+
+.site-footer:hover {
+  background-color: #f5f5ee;
+  transition: background-color 0.3s ease;
+}
+
