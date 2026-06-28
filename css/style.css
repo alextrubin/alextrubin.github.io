@@ -404,3 +404,13 @@ main {
   transition: background-color 0.3s ease;
 }
 
+@media (max-width: 700px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .site-footer {
+    margin-top: 30px;
+    padding: 15px 0;
+    font-size: 0.85rem;
+  }
+}
