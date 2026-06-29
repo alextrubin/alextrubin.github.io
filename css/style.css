@@ -222,6 +222,16 @@ h1 {
   letter-spacing: 0.5px;
 }
 
+.italic {
+  font-style: italic; /* Добавленное свойство для курсива */
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-color);
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
 /* ===== Галерея (главная) ===== */
 .gallery {
   display: flex;
