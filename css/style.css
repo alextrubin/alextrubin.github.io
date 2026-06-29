@@ -258,9 +258,9 @@
 .flower-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  gap: 6px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .grid-item {
