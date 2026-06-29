@@ -1,5 +1,5 @@
 - image: /images/flowers/001.jpg
-  caption: "Одуванчик (Taraxacum officinale)"
+  caption: " "
 - image: /images/flowers/002.jpg
   caption: "Ромашка (Matricaria chamomilla)"
 - image: /images/flowers/003.jpg
@@ -9,11 +9,11 @@
 - image: /images/flowers/005.jpg
   caption: "Лютик (Ranunculus acris)"
 - image: /images/flowers/006.jpg
-  caption: " "
+  caption: "что"
 - image: /images/flowers/007.jpg
-  caption: " "
+  caption: "123"
   - image: /images/flowers/008.jpg
-  caption: " "
+  caption: "134"
   - image: /images/flowers/009.jpg
   caption: " "
   - image: /images/flowers/010.jpg
