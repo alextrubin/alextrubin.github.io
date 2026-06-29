@@ -259,14 +259,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 12px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .grid-item {
   aspect-ratio: 1 / 1; /* Квадратные ячейки */
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: #f0f0e8;
 }
 
@@ -275,12 +275,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
 .grid-item img:hover {
-  transform: scale(1.03);
+  transform: scale(1.07);
 }
 
 /* ===== Лайтбокс ===== */
