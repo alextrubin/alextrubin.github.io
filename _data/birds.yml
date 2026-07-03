@@ -8,7 +8,6 @@
     - "/images/birds/puffinus_yelkouan_2.jpg"
   description: "..."
   url: "/birds/puffinus-yelkouan/"
-
 - id: gavia_arctica
   order: "Гагарообразные"
   family: "Гагаровые"
@@ -19,7 +18,6 @@
     - "/images/birds/gavia_arctica_2.jpg"
   description: "..."
   url: "/birds/gavia-arctica/"
-  
 - id: columba_livia
   order: "Голубеобразные"
   family: "Голубиные"
@@ -30,7 +28,6 @@
     - "/images/birds/columba_livia_2.jpg"
   description: "..."
   url: "/birds/columba-livia/"
-  
 - id: columba_palumbus
   order: "Голубеобразные"
   family: "Голубиные"
@@ -52,7 +49,6 @@
     - "/images/birds/spilopelia_senegalensis_2.jpg"
   description: "..."
   url: "/birds/spilopelia-senegalensis/"
-  
 - id: streptopelia_decaocto
   order: "Голубеобразные"
   family: "Голубиные"
@@ -63,7 +59,6 @@
     - "/images/birds/streptopelia_decaocto_2.jpg"
   description: "..."
   url: "/birds/streptopelia-decaocto/"
-  
 - id: anas_crecca
   order: "Гусеобразные"
   family: "Утиные"
@@ -1144,8 +1139,6 @@
     - "/images/birds/tachymarptis_melba_2.jpg"
   description: "..."
   url: "/birds/tachymarptis-melba/"
-
-
 - id: passer_domesticus
   order: "Воробьинообразные"
   family: "Воробьиные"
