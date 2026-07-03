@@ -3,13 +3,52 @@ layout: default
 title: "Птицы"
 ---
 
-<h1>Мои фотографии птиц</h1>
-<p>Здесь будет коллекция снимков пернатых друзей.</p>
-<!-- Добавляй свои картинки и текст как хочешь -->
-<div class="gallery">
-  <div class="photo-card">
-    <img src="/images/bird1.jpg" alt="Птица">
-    <div class="caption">Какая-то птица</div>
-  </div>
-  <!-- и так далее -->
+<h1>Птицы</h1>
+<p class="subheading">Эволюционное древо в фотографиях</p>
+
+<div class="taxonomy-toggle">
+  <button id="toggle-taxonomy" class="btn-toggle">Скрыть систематику</button>
+</div>
+
+<div class="birds-container" id="birdsContainer">
+  {% assign current_order = '' %}
+  {% assign current_family = '' %}
+
+  {% for bird in site.data.birds %}
+    <!-- Отряд -->
+    {% if bird.order != current_order %}
+      {% assign current_order = bird.order %}
+      {% assign current_family = '' %}
+      <div class="order-header taxonomy-item">
+        <h2>{{ bird.order }}</h2>
+      </div>
+    {% endif %}
+
+    <!-- Семейство -->
+    {% if bird.family != current_family %}
+      {% assign current_family = bird.family %}
+      <div class="family-header taxonomy-item">
+        <h3>{{ bird.family }}</h3>
+      </div>
+    {% endif %}
+
+    <!-- Карточка вида -->
+    <div class="bird-card">
+      <a href="#" class="lightbox-trigger" 
+         data-image="{{ bird.images[0] }}" 
+         data-caption="{{ bird.species }} ({{ bird.latin }})">
+        <img src="{{ bird.images[0] }}" alt="{{ bird.species }}" loading="lazy">
+      </a>
+      <div class="bird-caption">
+        <a href="{{ bird.url }}">{{ bird.species }}</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Лайтбокс (используем тот же, что и для цветов) -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-image" id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
 </div>
