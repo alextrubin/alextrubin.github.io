@@ -503,3 +503,176 @@ h1 {
     right: 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Страница птиц ===== */
+.birds-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Заголовки отрядов и семейств */
+.order-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 30px 0 8px 0;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #d0d0c8;
+  padding-bottom: 6px;
+}
+
+.family-header h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #444;
+  margin: 18px 0 8px 0;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  border-left: 4px solid #b0b0a8;
+  padding-left: 12px;
+}
+
+/* Сетка карточек (квадратные) */
+.bird-card {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px; /* можно регулировать */
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0f0e8;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Но мы хотим, чтобы карточки были в гибкой сетке. Лучше использовать grid для всей группы карточек. */
+/* Поэтому изменим подход: обернём все карточки в общий grid-контейнер */
+/* Для этого в HTML добавим контейнер .bird-grid внутри .birds-container, но я переделаю, чтобы не менять структуру. 
+
+Проще: все элементы .bird-card будут внутри .birds-container, но мы можем задать .birds-container как grid. Однако тогда заголовки тоже станут grid-элементами. 
+Лучше сделать .bird-grid отдельно для карточек, но у нас заголовки перемежаются с карточками. 
+
+Реализация: оставим как есть, но обернём карточки каждого таксона в отдельный div? Нет, тогда сложно перестраивать при скрытии заголовков.
+
+Я предлагаю следующее: .birds-container сделать flex-контейнером с flex-wrap, а карточки задать фиксированную ширину с учетом переноса. Тогда заголовки будут занимать всю ширину (width: 100%), а карточки - ширину в зависимости от размера экрана. Это проще.
+
+Итак, обновим CSS: */
+
+.birds-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.order-header,
+.family-header {
+  width: 100%; /* занимают всю строку */
+  flex: 0 0 100%;
+}
+
+.bird-card {
+  flex: 0 0 calc(25% - 12px); /* по 4 карточки в ряд на широком экране */
+  max-width: calc(25% - 12px);
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0f0e8;
+  position: relative;
+  cursor: pointer;
+}
+
+.bird-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.bird-card img:hover {
+  transform: scale(1.03);
+}
+
+.bird-caption {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.bird-caption a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.bird-caption a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Кнопка переключения */
+.taxonomy-toggle {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.btn-toggle {
+  background: none;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background-color: #f9f9f2;
+  transition: all 0.2s;
+  color: #333;
+}
+
+.btn-toggle:hover {
+  background-color: #e0e0d8;
+}
+
+/* Скрытие систематики */
+.hide-taxonomy .order-header,
+.hide-taxonomy .family-header {
+  display: none;
+}
+
+/* Адаптив для карточек */
+@media (max-width: 900px) {
+  .bird-card {
+    flex: 0 0 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
+  }
+}
+@media (max-width: 600px) {
+  .bird-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
+@media (max-width: 400px) {
+  .bird-card {
+    flex: 0 0 calc(100% - 12px);
+    max-width: calc(100% - 12px);
+  }
+}
