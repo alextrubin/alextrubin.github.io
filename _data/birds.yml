@@ -8,3 +8,2094 @@
     - "/images/birds/gavia_arctica_2.jpg"   # можно добавить сколько угодно
   description: "Краткое описание вида..."    # опционально
   url: "/birds/gavia-arctica/"              # адрес страницы вида
+
+- id: acanthis_flammea
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Чечётка"
+  latin: "Acanthis flammea"
+  images:
+    - "/images/birds/acanthis_flammea_1.jpg"
+    - "/images/birds/acanthis_flammea_2.jpg"
+  description: "..."
+  url: "/birds/acanthis-flammea/"
+- id: accipiter_nisus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Перепелятник"
+  latin: "Accipiter nisus"
+  images:
+    - "/images/birds/accipiter_nisus_1.jpg"
+    - "/images/birds/accipiter_nisus_2.jpg"
+  description: "..."
+  url: "/birds/accipiter-nisus/"
+- id: acrocephalus_arundinaceus
+  order: "Воробьинообразные"
+  family: "Камышовковые"
+  species: "Дроздовидная камышовка"
+  latin: "Acrocephalus arundinaceus"
+  images:
+    - "/images/birds/acrocephalus_arundinaceus_1.jpg"
+    - "/images/birds/acrocephalus_arundinaceus_2.jpg"
+  description: "..."
+  url: "/birds/acrocephalus-arundinaceus/"
+- id: acrocephalus_dumetorum
+  order: "Воробьинообразные"
+  family: "Камышовковые"
+  species: "Садовая камышовка"
+  latin: "Acrocephalus dumetorum"
+  images:
+    - "/images/birds/acrocephalus_dumetorum_1.jpg"
+    - "/images/birds/acrocephalus_dumetorum_2.jpg"
+  description: "..."
+  url: "/birds/acrocephalus-dumetorum/"
+- id: acrocephalus_schoenobaenus
+  order: "Воробьинообразные"
+  family: "Камышовковые"
+  species: "Камышовка-барсучок"
+  latin: "Acrocephalus schoenobaenus"
+  images:
+    - "/images/birds/acrocephalus_schoenobaenus_1.jpg"
+    - "/images/birds/acrocephalus_schoenobaenus_2.jpg"
+  description: "..."
+  url: "/birds/acrocephalus-schoenobaenus/"
+- id: actitis_hypoleucos
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Перевозчик"
+  latin: "Actitis hypoleucos"
+  images:
+    - "/images/birds/actitis_hypoleucos_1.jpg"
+    - "/images/birds/actitis_hypoleucos_2.jpg"
+  description: "..."
+  url: "/birds/actitis-hypoleucos/"
+- id: aegithalos_caudatus
+  order: "Воробьинообразные"
+  family: "Длиннохвостые синицы"
+  species: "Ополовник"
+  latin: "Aegithalos caudatus"
+  images:
+    - "/images/birds/aegithalos_caudatus_1.jpg"
+    - "/images/birds/aegithalos_caudatus_2.jpg"
+  description: "..."
+  url: "/birds/aegithalos-caudatus/"
+- id: aegypius_monachus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Чёрный гриф"
+  latin: "Aegypius monachus"
+  images:
+    - "/images/birds/aegypius_monachus_1.jpg"
+    - "/images/birds/aegypius_monachus_2.jpg"
+  description: "..."
+  url: "/birds/aegypius-monachus/"
+- id: alaudala_heinei
+  order: "Воробьинообразные"
+  family: "Жаворонковые"
+  species: "Туркестанский серый жаворонок"
+  latin: "Alaudala heinei"
+  images:
+    - "/images/birds/alaudala_heinei_1.jpg"
+    - "/images/birds/alaudala_heinei_2.jpg"
+  description: "..."
+  url: "/birds/alaudala-heinei/"
+- id: alectoris_chukar
+  order: "Курообразные"
+  family: "Фазановые"
+  species: "Кеклик"
+  latin: "Alectoris chukar"
+  images:
+    - "/images/birds/alectoris_chukar_1.jpg"
+    - "/images/birds/alectoris_chukar_2.jpg"
+  description: "..."
+  url: "/birds/alectoris-chukar/"
+- id: anas_crecca
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Чирок-свистунок"
+  latin: "Anas crecca"
+  images:
+    - "/images/birds/anas_crecca_1.jpg"
+    - "/images/birds/anas_crecca_2.jpg"
+  description: "..."
+  url: "/birds/anas-crecca/"
+- id: anas_platyrhynchos
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Кряква"
+  latin: "Anas platyrhynchos"
+  images:
+    - "/images/birds/anas_platyrhynchos_1.jpg"
+    - "/images/birds/anas_platyrhynchos_2.jpg"
+  description: "..."
+  url: "/birds/anas-platyrhynchos/"
+- id: anser_albifrons
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Белолобый гусь"
+  latin: "Anser albifrons"
+  images:
+    - "/images/birds/anser_albifrons_1.jpg"
+    - "/images/birds/anser_albifrons_2.jpg"
+  description: "..."
+  url: "/birds/anser-albifrons/"
+- id: anser_anser
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Серый гусь"
+  latin: "Anser anser"
+  images:
+    - "/images/birds/anser_anser_1.jpg"
+    - "/images/birds/anser_anser_2.jpg"
+  description: "..."
+  url: "/birds/anser-anser/"
+- id: anthus_campestris
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Полевой конёк"
+  latin: "Anthus campestris"
+  images:
+    - "/images/birds/anthus_campestris_1.jpg"
+    - "/images/birds/anthus_campestris_2.jpg"
+  description: "..."
+  url: "/birds/anthus-campestris/"
+- id: anthus_pratensis
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Луговой конёк"
+  latin: "Anthus pratensis"
+  images:
+    - "/images/birds/anthus_pratensis_1.jpg"
+    - "/images/birds/anthus_pratensis_2.jpg"
+  description: "..."
+  url: "/birds/anthus-pratensis/"
+- id: anthus_trivialis
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Лесной конёк"
+  latin: "Anthus trivialis"
+  images:
+    - "/images/birds/anthus_trivialis_1.jpg"
+    - "/images/birds/anthus_trivialis_2.jpg"
+  description: "..."
+  url: "/birds/anthus-trivialis/"
+- id: apus_apus
+  order: "Стрижеобразные"
+  family: "Стрижиные"
+  species: "Чёрный стриж"
+  latin: "Apus apus"
+  images:
+    - "/images/birds/apus_apus_1.jpg"
+    - "/images/birds/apus_apus_2.jpg"
+  description: "..."
+  url: "/birds/apus-apus/"
+- id: aquila_heliaca
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Орёл-могильник"
+  latin: "Aquila heliaca"
+  images:
+    - "/images/birds/aquila_heliaca_1.jpg"
+    - "/images/birds/aquila_heliaca_2.jpg"
+  description: "..."
+  url: "/birds/aquila-heliaca/"
+- id: aquila_nipalensis
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Степной орёл"
+  latin: "Aquila nipalensis"
+  images:
+    - "/images/birds/aquila_nipalensis_1.jpg"
+    - "/images/birds/aquila_nipalensis_2.jpg"
+  description: "..."
+  url: "/birds/aquila-nipalensis/"
+- id: ardea_alba
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Большая белая цапля"
+  latin: "Ardea alba"
+  images:
+    - "/images/birds/ardea_alba_1.jpg"
+    - "/images/birds/ardea_alba_2.jpg"
+  description: "..."
+  url: "/birds/ardea-alba/"
+- id: ardea_cinerea
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Серая цапля"
+  latin: "Ardea cinerea"
+  images:
+    - "/images/birds/ardea_cinerea_1.jpg"
+    - "/images/birds/ardea_cinerea_2.jpg"
+  description: "..."
+  url: "/birds/ardea-cinerea/"
+- id: ardea_ibis
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Египетская цапля"
+  latin: "Ardea ibis"
+  images:
+    - "/images/birds/ardea_ibis_1.jpg"
+    - "/images/birds/ardea_ibis_2.jpg"
+  description: "..."
+  url: "/birds/ardea-ibis/"
+- id: ardea_purpurea
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Рыжая цапля"
+  latin: "Ardea purpurea"
+  images:
+    - "/images/birds/ardea_purpurea_1.jpg"
+    - "/images/birds/ardea_purpurea_2.jpg"
+  description: "..."
+  url: "/birds/ardea-purpurea/"
+- id: ardeola_ralloides
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Жёлтая цапля"
+  latin: "Ardeola ralloides"
+  images:
+    - "/images/birds/ardeola_ralloides_1.jpg"
+    - "/images/birds/ardeola_ralloides_2.jpg"
+  description: "..."
+  url: "/birds/ardeola-ralloides/"
+- id: astur_gentilis
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Тетеревятник"
+  latin: "Astur gentilis"
+  images:
+    - "/images/birds/astur_gentilis_1.jpg"
+    - "/images/birds/astur_gentilis_2.jpg"
+  description: "..."
+  url: "/birds/astur-gentilis/"
+- id: athene_noctua
+  order: "Совообразные"
+  family: "Совиные"
+  species: "Домовый сыч"
+  latin: "Athene noctua"
+  images:
+    - "/images/birds/athene_noctua_1.jpg"
+    - "/images/birds/athene_noctua_2.jpg"
+  description: "..."
+  url: "/birds/athene-noctua/"
+- id: aythya_fuligula
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Хохлатая чернеть"
+  latin: "Aythya fuligula"
+  images:
+    - "/images/birds/aythya_fuligula_1.jpg"
+    - "/images/birds/aythya_fuligula_2.jpg"
+  description: "..."
+  url: "/birds/aythya-fuligula/"
+- id: bombycilla_garrulus
+  order: "Воробьинообразные"
+  family: "Свиристелевые"
+  species: "Свиристель"
+  latin: "Bombycilla garrulus"
+  images:
+    - "/images/birds/bombycilla_garrulus_1.jpg"
+    - "/images/birds/bombycilla_garrulus_2.jpg"
+  description: "..."
+  url: "/birds/bombycilla-garrulus/"
+- id: botaurus_minutus
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Волчок"
+  latin: "Botaurus minutus"
+  images:
+    - "/images/birds/botaurus_minutus_1.jpg"
+    - "/images/birds/botaurus_minutus_2.jpg"
+  description: "..."
+  url: "/birds/botaurus-minutus/"
+- id: bucephala_clangula
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Гоголь"
+  latin: "Bucephala clangula"
+  images:
+    - "/images/birds/bucephala_clangula_1.jpg"
+    - "/images/birds/bucephala_clangula_2.jpg"
+  description: "..."
+  url: "/birds/bucephala-clangula/"
+- id: buteo_buteo
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Канюк"
+  latin: "Buteo buteo"
+  images:
+    - "/images/birds/buteo_buteo_1.jpg"
+    - "/images/birds/buteo_buteo_2.jpg"
+  description: "..."
+  url: "/birds/buteo-buteo/"
+- id: buteo_lagopus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Зимняк"
+  latin: "Buteo lagopus"
+  images:
+    - "/images/birds/buteo_lagopus_1.jpg"
+    - "/images/birds/buteo_lagopus_2.jpg"
+  description: "..."
+  url: "/birds/buteo-lagopus/"
+- id: buteo_rufinus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Курганник"
+  latin: "Buteo rufinus"
+  images:
+    - "/images/birds/buteo_rufinus_1.jpg"
+    - "/images/birds/buteo_rufinus_2.jpg"
+  description: "..."
+  url: "/birds/buteo-rufinus/"
+- id: cairina_moschata
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Мускусная утка"
+  latin: "Cairina moschata"
+  images:
+    - "/images/birds/cairina_moschata_1.jpg"
+    - "/images/birds/cairina_moschata_2.jpg"
+  description: "..."
+  url: "/birds/cairina-moschata/"
+- id: calidris_minuta
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Кулик-воробей"
+  latin: "Calidris minuta"
+  images:
+    - "/images/birds/calidris_minuta_1.jpg"
+    - "/images/birds/calidris_minuta_2.jpg"
+  description: "..."
+  url: "/birds/calidris-minuta/"
+- id: calidris_pugnax
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Турухтан"
+  latin: "Calidris pugnax"
+  images:
+    - "/images/birds/calidris_pugnax_1.jpg"
+    - "/images/birds/calidris_pugnax_2.jpg"
+  description: "..."
+  url: "/birds/calidris-pugnax/"
+- id: calidris_temminckii
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Белохвостый песочник"
+  latin: "Calidris temminckii"
+  images:
+    - "/images/birds/calidris_temminckii_1.jpg"
+    - "/images/birds/calidris_temminckii_2.jpg"
+  description: "..."
+  url: "/birds/calidris-temminckii/"
+- id: caprimulgus_europaeus
+  order: "Козодоеобразные"
+  family: "Настоящие козодои"
+  species: "Козодой"
+  latin: "Caprimulgus europaeus"
+  images:
+    - "/images/birds/caprimulgus_europaeus_1.jpg"
+    - "/images/birds/caprimulgus_europaeus_2.jpg"
+  description: "..."
+  url: "/birds/caprimulgus-europaeus/"
+- id: carduelis_carduelis
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Щегол"
+  latin: "Carduelis carduelis"
+  images:
+    - "/images/birds/carduelis_carduelis_1.jpg"
+    - "/images/birds/carduelis_carduelis_2.jpg"
+  description: "..."
+  url: "/birds/carduelis-carduelis/"
+- id: carpodacus_erythrinus
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Чечевица"
+  latin: "Carpodacus erythrinus"
+  images:
+    - "/images/birds/carpodacus_erythrinus_1.jpg"
+    - "/images/birds/carpodacus_erythrinus_2.jpg"
+  description: "..."
+  url: "/birds/carpodacus-erythrinus/"
+- id: carpodacus_sibiricus
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Урагус"
+  latin: "Carpodacus sibiricus"
+  images:
+    - "/images/birds/carpodacus_sibiricus_1.jpg"
+    - "/images/birds/carpodacus_sibiricus_2.jpg"
+  description: "..."
+  url: "/birds/carpodacus-sibiricus/"
+- id: certhia_brachydactyla
+  order: "Воробьинообразные"
+  family: "Пищуховые"
+  species: "Короткопалая пищуха"
+  latin: "Certhia brachydactyla"
+  images:
+    - "/images/birds/certhia_brachydactyla_1.jpg"
+    - "/images/birds/certhia_brachydactyla_2.jpg"
+  description: "..."
+  url: "/birds/certhia-brachydactyla/"
+- id: certhia_familiaris
+  order: "Воробьинообразные"
+  family: "Пищуховые"
+  species: "Пищуха"
+  latin: "Certhia familiaris"
+  images:
+    - "/images/birds/certhia_familiaris_1.jpg"
+    - "/images/birds/certhia_familiaris_2.jpg"
+  description: "..."
+  url: "/birds/certhia-familiaris/"
+- id: charadrius_hiaticula
+  order: "Ржанкообразные"
+  family: "Ржанковые"
+  species: "Галстучник"
+  latin: "Charadrius hiaticula"
+  images:
+    - "/images/birds/charadrius_hiaticula_1.jpg"
+    - "/images/birds/charadrius_hiaticula_2.jpg"
+  description: "..."
+  url: "/birds/charadrius-hiaticula/"
+- id: chlidonias_hybrida
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "белощёкая крачка"
+  latin: "Chlidonias hybrida"
+  images:
+    - "/images/birds/chlidonias_hybrida_1.jpg"
+    - "/images/birds/chlidonias_hybrida_2.jpg"
+  description: "..."
+  url: "/birds/chlidonias-hybrida/"
+- id: chlidonias_leucopterus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Белокрылая крачка"
+  latin: "Chlidonias leucopterus"
+  images:
+    - "/images/birds/chlidonias_leucopterus_1.jpg"
+    - "/images/birds/chlidonias_leucopterus_2.jpg"
+  description: "..."
+  url: "/birds/chlidonias-leucopterus/"
+- id: chloris_chloris
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Зеленушка"
+  latin: "Chloris chloris"
+  images:
+    - "/images/birds/chloris_chloris_1.jpg"
+    - "/images/birds/chloris_chloris_2.jpg"
+  description: "..."
+  url: "/birds/chloris-chloris/"
+- id: chroicocephalus_genei
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Морской голубок"
+  latin: "Chroicocephalus genei"
+  images:
+    - "/images/birds/chroicocephalus_genei_1.jpg"
+    - "/images/birds/chroicocephalus_genei_2.jpg"
+  description: "..."
+  url: "/birds/chroicocephalus-genei/"
+- id: chroicocephalus_ridibundus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Озёрная чайка"
+  latin: "Chroicocephalus ridibundus"
+  images:
+    - "/images/birds/chroicocephalus_ridibundus_1.jpg"
+    - "/images/birds/chroicocephalus_ridibundus_2.jpg"
+  description: "..."
+  url: "/birds/chroicocephalus-ridibundus/"
+- id: circaetus_gallicus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Змееяд"
+  latin: "Circaetus gallicus"
+  images:
+    - "/images/birds/circaetus_gallicus_1.jpg"
+    - "/images/birds/circaetus_gallicus_2.jpg"
+  description: "..."
+  url: "/birds/circaetus-gallicus/"
+- id: circus_aeruginosus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Болотный лунь"
+  latin: "Circus aeruginosus"
+  images:
+    - "/images/birds/circus_aeruginosus_1.jpg"
+    - "/images/birds/circus_aeruginosus_2.jpg"
+  description: "..."
+  url: "/birds/circus-aeruginosus/"
+- id: circus_macrourus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Степной лунь"
+  latin: "Circus macrourus"
+  images:
+    - "/images/birds/circus_macrourus_1.jpg"
+    - "/images/birds/circus_macrourus_2.jpg"
+  description: "..."
+  url: "/birds/circus-macrourus/"
+- id: circus_pygargus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Луговой лунь"
+  latin: "Circus pygargus"
+  images:
+    - "/images/birds/circus_pygargus_1.jpg"
+    - "/images/birds/circus_pygargus_2.jpg"
+  description: "..."
+  url: "/birds/circus-pygargus/"
+- id: clangula_hyemalis
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Морянка"
+  latin: "Clangula hyemalis"
+  images:
+    - "/images/birds/clangula_hyemalis_1.jpg"
+    - "/images/birds/clangula_hyemalis_2.jpg"
+  description: "..."
+  url: "/birds/clangula-hyemalis/"
+- id: coccothraustes_coccothraustes
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Дубонос"
+  latin: "Coccothraustes coccothraustes"
+  images:
+    - "/images/birds/coccothraustes_coccothraustes_1.jpg"
+    - "/images/birds/coccothraustes_coccothraustes_2.jpg"
+  description: "..."
+  url: "/birds/coccothraustes-coccothraustes/"
+- id: coloeus_monedula
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Галка"
+  latin: "Coloeus monedula"
+  images:
+    - "/images/birds/coloeus_monedula_1.jpg"
+    - "/images/birds/coloeus_monedula_2.jpg"
+  description: "..."
+  url: "/birds/coloeus-monedula/"
+- id: columba_livia
+  order: "Голубеобразные"
+  family: "Голубиные"
+  species: "Сизый голубь"
+  latin: "Columba livia"
+  images:
+    - "/images/birds/columba_livia_1.jpg"
+    - "/images/birds/columba_livia_2.jpg"
+  description: "..."
+  url: "/birds/columba-livia/"
+- id: columba_palumbus
+  order: "Голубеобразные"
+  family: "Голубиные"
+  species: "Вяхирь"
+  latin: "Columba palumbus"
+  images:
+    - "/images/birds/columba_palumbus_1.jpg"
+    - "/images/birds/columba_palumbus_2.jpg"
+  description: "..."
+  url: "/birds/columba-palumbus/"
+- id: coracias_garrulus
+  order: "Ракшеобразные"
+  family: "Сизоворонковые"
+  species: "Сизоворонка"
+  latin: "Coracias garrulus"
+  images:
+    - "/images/birds/coracias_garrulus_1.jpg"
+    - "/images/birds/coracias_garrulus_2.jpg"
+  description: "..."
+  url: "/birds/coracias-garrulus/"
+- id: corvus_corax
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Ворон"
+  latin: "Corvus corax"
+  images:
+    - "/images/birds/corvus_corax_1.jpg"
+    - "/images/birds/corvus_corax_2.jpg"
+  description: "..."
+  url: "/birds/corvus-corax/"
+- id: corvus_cornix
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Серая ворона"
+  latin: "Corvus cornix"
+  images:
+    - "/images/birds/corvus_cornix_1.jpg"
+    - "/images/birds/corvus_cornix_2.jpg"
+  description: "..."
+  url: "/birds/corvus-cornix/"
+- id: corvus_frugilegus
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Грач"
+  latin: "Corvus frugilegus"
+  images:
+    - "/images/birds/corvus_frugilegus_1.jpg"
+    - "/images/birds/corvus_frugilegus_2.jpg"
+  description: "..."
+  url: "/birds/corvus-frugilegus/"
+- id: crex_crex
+  order: "Журавлеобразные"
+  family: "Пастушковые"
+  species: "Коростель"
+  latin: "Crex crex"
+  images:
+    - "/images/birds/crex_crex_1.jpg"
+    - "/images/birds/crex_crex_2.jpg"
+  description: "..."
+  url: "/birds/crex-crex/"
+- id: cuculus_canorus
+  order: "Кукушкообразные"
+  family: "Кукушковые"
+  species: "Кукушка"
+  latin: "Cuculus canorus"
+  images:
+    - "/images/birds/cuculus_canorus_1.jpg"
+    - "/images/birds/cuculus_canorus_2.jpg"
+  description: "..."
+  url: "/birds/cuculus-canorus/"
+- id: curruca_communis
+  order: "Воробьинообразные"
+  family: "Славковые"
+  species: "Серая славка"
+  latin: "Curruca communis"
+  images:
+    - "/images/birds/curruca_communis_1.jpg"
+    - "/images/birds/curruca_communis_2.jpg"
+  description: "..."
+  url: "/birds/curruca-communis/"
+- id: curruca_curruca
+  order: "Воробьинообразные"
+  family: "Славковые"
+  species: "Славка-мельничек"
+  latin: "Curruca curruca"
+  images:
+    - "/images/birds/curruca_curruca_1.jpg"
+    - "/images/birds/curruca_curruca_2.jpg"
+  description: "..."
+  url: "/birds/curruca-curruca/"
+- id: curruca_mystacea
+  order: "Воробьинообразные"
+  family: "Славковые"
+  species: "Белоусая славка"
+  latin: "Curruca mystacea"
+  images:
+    - "/images/birds/curruca_mystacea_1.jpg"
+    - "/images/birds/curruca_mystacea_2.jpg"
+  description: "..."
+  url: "/birds/curruca-mystacea/"
+- id: curruca_nisoria
+  order: "Воробьинообразные"
+  family: "Славковые"
+  species: "Ястребиная славка"
+  latin: "Curruca nisoria"
+  images:
+    - "/images/birds/curruca_nisoria_1.jpg"
+    - "/images/birds/curruca_nisoria_2.jpg"
+  description: "..."
+  url: "/birds/curruca-nisoria/"
+- id: cyanistes_caeruleus
+  order: "Воробьинообразные"
+  family: "Синицевые"
+  species: "Лазоревка"
+  latin: "Cyanistes caeruleus"
+  images:
+    - "/images/birds/cyanistes_caeruleus_1.jpg"
+    - "/images/birds/cyanistes_caeruleus_2.jpg"
+  description: "..."
+  url: "/birds/cyanistes-caeruleus/"
+- id: cygnus_olor
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Лебедь-шипун"
+  latin: "Cygnus olor"
+  images:
+    - "/images/birds/cygnus_olor_1.jpg"
+    - "/images/birds/cygnus_olor_2.jpg"
+  description: "..."
+  url: "/birds/cygnus-olor/"
+- id: delichon_urbicum
+  order: "Воробьинообразные"
+  family: "Ласточковые"
+  species: "Воронок"
+  latin: "Delichon urbicum"
+  images:
+    - "/images/birds/delichon_urbicum_1.jpg"
+    - "/images/birds/delichon_urbicum_2.jpg"
+  description: "..."
+  url: "/birds/delichon-urbicum/"
+- id: dendrocopos_leucotos
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Белоспинный дятел"
+  latin: "Dendrocopos leucotos"
+  images:
+    - "/images/birds/dendrocopos_leucotos_1.jpg"
+    - "/images/birds/dendrocopos_leucotos_2.jpg"
+  description: "..."
+  url: "/birds/dendrocopos-leucotos/"
+- id: dendrocopos_major
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Большой пёстрый дятел"
+  latin: "Dendrocopos major"
+  images:
+    - "/images/birds/dendrocopos_major_1.jpg"
+    - "/images/birds/dendrocopos_major_2.jpg"
+  description: "..."
+  url: "/birds/dendrocopos-major/"
+- id: dendrocoptes_medius
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Средний пёстрый дятел"
+  latin: "Dendrocoptes medius"
+  images:
+    - "/images/birds/dendrocoptes_medius_1.jpg"
+    - "/images/birds/dendrocoptes_medius_2.jpg"
+  description: "..."
+  url: "/birds/dendrocoptes-medius/"
+- id: dryobates_minor
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Малый пёстрый дятел"
+  latin: "Dryobates minor"
+  images:
+    - "/images/birds/dryobates_minor_1.jpg"
+    - "/images/birds/dryobates_minor_2.jpg"
+  description: "..."
+  url: "/birds/dryobates-minor/"
+- id: dryocopus_martius
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Желна"
+  latin: "Dryocopus martius"
+  images:
+    - "/images/birds/dryocopus_martius_1.jpg"
+    - "/images/birds/dryocopus_martius_2.jpg"
+  description: "..."
+  url: "/birds/dryocopus-martius/"
+- id: egretta_garzetta
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Малая белая цапля"
+  latin: "Egretta garzetta"
+  images:
+    - "/images/birds/egretta_garzetta_1.jpg"
+    - "/images/birds/egretta_garzetta_2.jpg"
+  description: "..."
+  url: "/birds/egretta-garzetta/"
+- id: emberiza_calandra
+  order: "Воробьинообразные"
+  family: "Овсянковые"
+  species: "Просянка"
+  latin: "Emberiza calandra"
+  images:
+    - "/images/birds/emberiza_calandra_1.jpg"
+    - "/images/birds/emberiza_calandra_2.jpg"
+  description: "..."
+  url: "/birds/emberiza-calandra/"
+- id: emberiza_citrinella
+  order: "Воробьинообразные"
+  family: "Овсянковые"
+  species: "Обыкновенная овсянка"
+  latin: "Emberiza citrinella"
+  images:
+    - "/images/birds/emberiza_citrinella_1.jpg"
+    - "/images/birds/emberiza_citrinella_2.jpg"
+  description: "..."
+  url: "/birds/emberiza-citrinella/"
+- id: emberiza_hortulana
+  order: "Воробьинообразные"
+  family: "Овсянковые"
+  species: "Садовая овсянка"
+  latin: "Emberiza hortulana"
+  images:
+    - "/images/birds/emberiza_hortulana_1.jpg"
+    - "/images/birds/emberiza_hortulana_2.jpg"
+  description: "..."
+  url: "/birds/emberiza-hortulana/"
+- id: emberiza_melanocephala
+  order: "Воробьинообразные"
+  family: "Овсянковые"
+  species: "Черноголовая овсянка"
+  latin: "Emberiza melanocephala"
+  images:
+    - "/images/birds/emberiza_melanocephala_1.jpg"
+    - "/images/birds/emberiza_melanocephala_2.jpg"
+  description: "..."
+  url: "/birds/emberiza-melanocephala/"
+- id: emberiza_schoeniclus
+  order: "Воробьинообразные"
+  family: "Овсянковые"
+  species: "Камышовая овсянка"
+  latin: "Emberiza schoeniclus"
+  images:
+    - "/images/birds/emberiza_schoeniclus_1.jpg"
+    - "/images/birds/emberiza_schoeniclus_2.jpg"
+  description: "..."
+  url: "/birds/emberiza-schoeniclus/"
+- id: eremophila_alpestris
+  order: "Воробьинообразные"
+  family: "Жаворонковые"
+  species: "Рогатый жаворонок"
+  latin: "Eremophila alpestris"
+  images:
+    - "/images/birds/eremophila_alpestris_1.jpg"
+    - "/images/birds/eremophila_alpestris_2.jpg"
+  description: "..."
+  url: "/birds/eremophila-alpestris/"
+- id: erithacus_rubecula
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Зарянка"
+  latin: "Erithacus rubecula"
+  images:
+    - "/images/birds/erithacus_rubecula_1.jpg"
+    - "/images/birds/erithacus_rubecula_2.jpg"
+  description: "..."
+  url: "/birds/erithacus-rubecula/"
+- id: falco_naumanni
+  order: "Соколообразные"
+  family: "Соколиные"
+  species: "Степная пустельга"
+  latin: "Falco naumanni"
+  images:
+    - "/images/birds/falco_naumanni_1.jpg"
+    - "/images/birds/falco_naumanni_2.jpg"
+  description: "..."
+  url: "/birds/falco-naumanni/"
+- id: falco_peregrinus
+  order: "Соколообразные"
+  family: "Соколиные"
+  species: "Сапсан"
+  latin: "Falco peregrinus"
+  images:
+    - "/images/birds/falco_peregrinus_1.jpg"
+    - "/images/birds/falco_peregrinus_2.jpg"
+  description: "..."
+  url: "/birds/falco-peregrinus/"
+- id: falco_subbuteo
+  order: "Соколообразные"
+  family: "Соколиные"
+  species: "Чеглок"
+  latin: "Falco subbuteo"
+  images:
+    - "/images/birds/falco_subbuteo_1.jpg"
+    - "/images/birds/falco_subbuteo_2.jpg"
+  description: "..."
+  url: "/birds/falco-subbuteo/"
+- id: falco_tinnunculus
+  order: "Соколообразные"
+  family: "Соколиные"
+  species: "Пустельга"
+  latin: "Falco tinnunculus"
+  images:
+    - "/images/birds/falco_tinnunculus_1.jpg"
+    - "/images/birds/falco_tinnunculus_2.jpg"
+  description: "..."
+  url: "/birds/falco-tinnunculus/"
+- id: falco_vespertinus
+  order: "Соколообразные"
+  family: "Соколиные"
+  species: "Кобчик"
+  latin: "Falco vespertinus"
+  images:
+    - "/images/birds/falco_vespertinus_1.jpg"
+    - "/images/birds/falco_vespertinus_2.jpg"
+  description: "..."
+  url: "/birds/falco-vespertinus/"
+- id: ficedula_hypoleuca
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Мухоловка-пеструшка"
+  latin: "Ficedula hypoleuca"
+  images:
+    - "/images/birds/ficedula_hypoleuca_1.jpg"
+    - "/images/birds/ficedula_hypoleuca_2.jpg"
+  description: "..."
+  url: "/birds/ficedula-hypoleuca/"
+- id: ficedula_parva
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Малая мухоловка"
+  latin: "Ficedula parva"
+  images:
+    - "/images/birds/ficedula_parva_1.jpg"
+    - "/images/birds/ficedula_parva_2.jpg"
+  description: "..."
+  url: "/birds/ficedula-parva/"
+- id: fringilla_coelebs
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Зяблик"
+  latin: "Fringilla coelebs"
+  images:
+    - "/images/birds/fringilla_coelebs_1.jpg"
+    - "/images/birds/fringilla_coelebs_2.jpg"
+  description: "..."
+  url: "/birds/fringilla-coelebs/"
+- id: fringilla_montifringilla
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Юрок"
+  latin: "Fringilla montifringilla"
+  images:
+    - "/images/birds/fringilla_montifringilla_1.jpg"
+    - "/images/birds/fringilla_montifringilla_2.jpg"
+  description: "..."
+  url: "/birds/fringilla-montifringilla/"
+- id: fulica_atra
+  order: "Журавлеобразные"
+  family: "Пастушковые"
+  species: "Лысуха"
+  latin: "Fulica atra"
+  images:
+    - "/images/birds/fulica_atra_1.jpg"
+    - "/images/birds/fulica_atra_2.jpg"
+  description: "..."
+  url: "/birds/fulica-atra/"
+- id: galerida_cristata
+  order: "Воробьинообразные"
+  family: "Жаворонковые"
+  species: "Хохлатый жаворонок"
+  latin: "Galerida cristata"
+  images:
+    - "/images/birds/galerida_cristata_1.jpg"
+    - "/images/birds/galerida_cristata_2.jpg"
+  description: "..."
+  url: "/birds/galerida-cristata/"
+- id: gallinula_chloropus
+  order: "Журавлеобразные"
+  family: "Пастушковые"
+  species: "Камышница"
+  latin: "Gallinula chloropus"
+  images:
+    - "/images/birds/gallinula_chloropus_1.jpg"
+    - "/images/birds/gallinula_chloropus_2.jpg"
+  description: "..."
+  url: "/birds/gallinula-chloropus/"
+- id: gallus_gallus
+  order: "Курообразные"
+  family: "Фазановые"
+  species: "Банкивский петух"
+  latin: "Gallus gallus"
+  images:
+    - "/images/birds/gallus_gallus_1.jpg"
+    - "/images/birds/gallus_gallus_2.jpg"
+  description: "..."
+  url: "/birds/gallus-gallus/"
+- id: garrulus_glandarius
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Сойка"
+  latin: "Garrulus glandarius"
+  images:
+    - "/images/birds/garrulus_glandarius_1.jpg"
+    - "/images/birds/garrulus_glandarius_2.jpg"
+  description: "..."
+  url: "/birds/garrulus-glandarius/"
+- id: gavia_arctica
+  order: "Гагарообразные"
+  family: "Гагаровые"
+  species: "Чернозобая гагара"
+  latin: "Gavia arctica"
+  images:
+    - "/images/birds/gavia_arctica_1.jpg"
+    - "/images/birds/gavia_arctica_2.jpg"
+  description: "..."
+  url: "/birds/gavia-arctica/"
+- id: glareola_pratincola
+  order: "Ржанкообразные"
+  family: "Тиркушковые"
+  species: "Луговая тиркушка"
+  latin: "Glareola pratincola"
+  images:
+    - "/images/birds/glareola_pratincola_1.jpg"
+    - "/images/birds/glareola_pratincola_2.jpg"
+  description: "..."
+  url: "/birds/glareola-pratincola/"
+- id: gyps_fulvus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Белоголовый сип"
+  latin: "Gyps fulvus"
+  images:
+    - "/images/birds/gyps_fulvus_1.jpg"
+    - "/images/birds/gyps_fulvus_2.jpg"
+  description: "..."
+  url: "/birds/gyps-fulvus/"
+- id: haematopus_ostralegus
+  order: "Ржанкообразные"
+  family: "Кулики-сороки"
+  species: "Кулик-сорока"
+  latin: "Haematopus ostralegus"
+  images:
+    - "/images/birds/haematopus_ostralegus_1.jpg"
+    - "/images/birds/haematopus_ostralegus_2.jpg"
+  description: "..."
+  url: "/birds/haematopus-ostralegus/"
+- id: haliaeetus_albicilla
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Орлан-Белохвост"
+  latin: "Haliaeetus albicilla"
+  images:
+    - "/images/birds/haliaeetus_albicilla_1.jpg"
+    - "/images/birds/haliaeetus_albicilla_2.jpg"
+  description: "..."
+  url: "/birds/haliaeetus-albicilla/"
+- id: himantopus_himantopus
+  order: "Ржанкообразные"
+  family: "Шилоклювковые"
+  species: "Ходулочник"
+  latin: "Himantopus himantopus"
+  images:
+    - "/images/birds/himantopus_himantopus_1.jpg"
+    - "/images/birds/himantopus_himantopus_2.jpg"
+  description: "..."
+  url: "/birds/himantopus-himantopus/"
+- id: hirundo_rustica
+  order: "Воробьинообразные"
+  family: "Ласточковые"
+  species: "Деревенская ласточка"
+  latin: "Hirundo rustica"
+  images:
+    - "/images/birds/hirundo_rustica_1.jpg"
+    - "/images/birds/hirundo_rustica_2.jpg"
+  description: "..."
+  url: "/birds/hirundo-rustica/"
+- id: ichthyaetus_melanocephalus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Черноголовая чайка"
+  latin: "Ichthyaetus melanocephalus"
+  images:
+    - "/images/birds/ichthyaetus_melanocephalus_1.jpg"
+    - "/images/birds/ichthyaetus_melanocephalus_2.jpg"
+  description: "..."
+  url: "/birds/ichthyaetus-melanocephalus/"
+- id: iduna_caligata
+  order: "Воробьинообразные"
+  family: "Камышовковые"
+  species: "Северная бормотушка"
+  latin: "Iduna caligata"
+  images:
+    - "/images/birds/iduna_caligata_1.jpg"
+    - "/images/birds/iduna_caligata_2.jpg"
+  description: "..."
+  url: "/birds/iduna-caligata/"
+- id: iduna_pallida
+  order: "Воробьинообразные"
+  family: "Камышовковые"
+  species: "Бледная бормотушка"
+  latin: "Iduna pallida"
+  images:
+    - "/images/birds/iduna_pallida_1.jpg"
+    - "/images/birds/iduna_pallida_2.jpg"
+  description: "..."
+  url: "/birds/iduna-pallida/"
+- id: jynx_torquilla
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Вертишейка"
+  latin: "Jynx torquilla"
+  images:
+    - "/images/birds/jynx_torquilla_1.jpg"
+    - "/images/birds/jynx_torquilla_2.jpg"
+  description: "..."
+  url: "/birds/jynx-torquilla/"
+- id: lanius_collurio
+  order: "Воробьинообразные"
+  family: "Сорокопутовые"
+  species: "Жулан"
+  latin: "Lanius collurio"
+  images:
+    - "/images/birds/lanius_collurio_1.jpg"
+    - "/images/birds/lanius_collurio_2.jpg"
+  description: "..."
+  url: "/birds/lanius-collurio/"
+- id: lanius_excubitor
+  order: "Воробьинообразные"
+  family: "Сорокопутовые"
+  species: "Серый сорокопут"
+  latin: "Lanius excubitor"
+  images:
+    - "/images/birds/lanius_excubitor_1.jpg"
+    - "/images/birds/lanius_excubitor_2.jpg"
+  description: "..."
+  url: "/birds/lanius-excubitor/"
+- id: lanius_minor
+  order: "Воробьинообразные"
+  family: "Сорокопутовые"
+  species: "Чернолобый сорокопут"
+  latin: "Lanius minor"
+  images:
+    - "/images/birds/lanius_minor_1.jpg"
+    - "/images/birds/lanius_minor_2.jpg"
+  description: "..."
+  url: "/birds/lanius-minor/"
+- id: lanius_senator
+  order: "Воробьинообразные"
+  family: "Сорокопутовые"
+  species: "Красноголовый сорокопут"
+  latin: "Lanius senator"
+  images:
+    - "/images/birds/lanius_senator_1.jpg"
+    - "/images/birds/lanius_senator_2.jpg"
+  description: "..."
+  url: "/birds/lanius-senator/"
+- id: larus_argentatus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Серебристая чайка"
+  latin: "Larus argentatus"
+  images:
+    - "/images/birds/larus_argentatus_1.jpg"
+    - "/images/birds/larus_argentatus_2.jpg"
+  description: "..."
+  url: "/birds/larus-argentatus/"
+- id: larus_cachinnans
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Хохотунья"
+  latin: "Larus cachinnans"
+  images:
+    - "/images/birds/larus_cachinnans_1.jpg"
+    - "/images/birds/larus_cachinnans_2.jpg"
+  description: "..."
+  url: "/birds/larus-cachinnans/"
+- id: larus_canus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Сизая чайка"
+  latin: "Larus canus"
+  images:
+    - "/images/birds/larus_canus_1.jpg"
+    - "/images/birds/larus_canus_2.jpg"
+  description: "..."
+  url: "/birds/larus-canus/"
+- id: larus_fuscus
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Клуша"
+  latin: "Larus fuscus"
+  images:
+    - "/images/birds/larus_fuscus_1.jpg"
+    - "/images/birds/larus_fuscus_2.jpg"
+  description: "..."
+  url: "/birds/larus-fuscus/"
+- id: larus_michahellis
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Средиземноморская чайка"
+  latin: "Larus michahellis"
+  images:
+    - "/images/birds/larus_michahellis_1.jpg"
+    - "/images/birds/larus_michahellis_2.jpg"
+  description: "..."
+  url: "/birds/larus-michahellis/"
+- id: limosa_limosa
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Большой веретенник"
+  latin: "Limosa limosa"
+  images:
+    - "/images/birds/limosa_limosa_1.jpg"
+    - "/images/birds/limosa_limosa_2.jpg"
+  description: "..."
+  url: "/birds/limosa-limosa/"
+- id: linaria_cannabina
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Коноплянка"
+  latin: "Linaria cannabina"
+  images:
+    - "/images/birds/linaria_cannabina_1.jpg"
+    - "/images/birds/linaria_cannabina_2.jpg"
+  description: "..."
+  url: "/birds/linaria-cannabina/"
+- id: locustella_luscinioides
+  order: "Воробьинообразные"
+  family: "Сверчковые"
+  species: "Соловьиный сверчок"
+  latin: "Locustella luscinioides"
+  images:
+    - "/images/birds/locustella_luscinioides_1.jpg"
+    - "/images/birds/locustella_luscinioides_2.jpg"
+  description: "..."
+  url: "/birds/locustella-luscinioides/"
+- id: locustella_naevia
+  order: "Воробьинообразные"
+  family: "Сверчковые"
+  species: "Обыкновенный сверчок"
+  latin: "Locustella naevia"
+  images:
+    - "/images/birds/locustella_naevia_1.jpg"
+    - "/images/birds/locustella_naevia_2.jpg"
+  description: "..."
+  url: "/birds/locustella-naevia/"
+- id: luscinia_megarhynchos
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Южный соловей"
+  latin: "Luscinia megarhynchos"
+  images:
+    - "/images/birds/luscinia_megarhynchos_1.jpg"
+    - "/images/birds/luscinia_megarhynchos_2.jpg"
+  description: "..."
+  url: "/birds/luscinia-megarhynchos/"
+- id: luscinia_svecica
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Варакушка"
+  latin: "Luscinia svecica"
+  images:
+    - "/images/birds/luscinia_svecica_1.jpg"
+    - "/images/birds/luscinia_svecica_2.jpg"
+  description: "..."
+  url: "/birds/luscinia-svecica/"
+- id: mareca_penelope
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Свиязь"
+  latin: "Mareca penelope"
+  images:
+    - "/images/birds/mareca_penelope_1.jpg"
+    - "/images/birds/mareca_penelope_2.jpg"
+  description: "..."
+  url: "/birds/mareca-penelope/"
+- id: mareca_strepera
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Серая утка"
+  latin: "Mareca strepera"
+  images:
+    - "/images/birds/mareca_strepera_1.jpg"
+    - "/images/birds/mareca_strepera_2.jpg"
+  description: "..."
+  url: "/birds/mareca-strepera/"
+- id: mergellus_albellus
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Луток"
+  latin: "Mergellus albellus"
+  images:
+    - "/images/birds/mergellus_albellus_1.jpg"
+    - "/images/birds/mergellus_albellus_2.jpg"
+  description: "..."
+  url: "/birds/mergellus-albellus/"
+- id: mergus_merganser
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Большой крохаль"
+  latin: "Mergus merganser"
+  images:
+    - "/images/birds/mergus_merganser_1.jpg"
+    - "/images/birds/mergus_merganser_2.jpg"
+  description: "..."
+  url: "/birds/mergus-merganser/"
+- id: merops_apiaster
+  order: "Ракшеобразные"
+  family: "Щурковые"
+  species: "Золотистая щурка"
+  latin: "Merops apiaster"
+  images:
+    - "/images/birds/merops_apiaster_1.jpg"
+    - "/images/birds/merops_apiaster_2.jpg"
+  description: "..."
+  url: "/birds/merops-apiaster/"
+- id: merops_persicus
+  order: "Ракшеобразные"
+  family: "Щурковые"
+  species: "Зелёная щурка"
+  latin: "Merops persicus"
+  images:
+    - "/images/birds/merops_persicus_1.jpg"
+    - "/images/birds/merops_persicus_2.jpg"
+  description: "..."
+  url: "/birds/merops-persicus/"
+- id: microcarbo_pygmaeus
+  order: "Олушеобразные"
+  family: "Баклановые"
+  species: "Малый баклан"
+  latin: "Microcarbo pygmaeus"
+  images:
+    - "/images/birds/microcarbo_pygmaeus_1.jpg"
+    - "/images/birds/microcarbo_pygmaeus_2.jpg"
+  description: "..."
+  url: "/birds/microcarbo-pygmaeus/"
+- id: milvus_migrans
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Чёрный коршун"
+  latin: "Milvus migrans"
+  images:
+    - "/images/birds/milvus_migrans_1.jpg"
+    - "/images/birds/milvus_migrans_2.jpg"
+  description: "..."
+  url: "/birds/milvus-migrans/"
+- id: monticola_solitarius
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Синий каменный дрозд"
+  latin: "Monticola solitarius"
+  images:
+    - "/images/birds/monticola_solitarius_1.jpg"
+    - "/images/birds/monticola_solitarius_2.jpg"
+  description: "..."
+  url: "/birds/monticola-solitarius/"
+- id: motacilla_alba
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Белая трясогузка"
+  latin: "Motacilla alba"
+  images:
+    - "/images/birds/motacilla_alba_1.jpg"
+    - "/images/birds/motacilla_alba_2.jpg"
+  description: "..."
+  url: "/birds/motacilla-alba/"
+- id: motacilla_cinerea
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Горная трясогузка"
+  latin: "Motacilla cinerea"
+  images:
+    - "/images/birds/motacilla_cinerea_1.jpg"
+    - "/images/birds/motacilla_cinerea_2.jpg"
+  description: "..."
+  url: "/birds/motacilla-cinerea/"
+- id: motacilla_citreola
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Желтоголовая трясогузка"
+  latin: "Motacilla citreola"
+  images:
+    - "/images/birds/motacilla_citreola_1.jpg"
+    - "/images/birds/motacilla_citreola_2.jpg"
+  description: "..."
+  url: "/birds/motacilla-citreola/"
+- id: motacilla_flava
+  order: "Воробьинообразные"
+  family: "Трясогузковые"
+  species: "Жёлтая трясогузка"
+  latin: "Motacilla flava"
+  images:
+    - "/images/birds/motacilla_flava_1.jpg"
+    - "/images/birds/motacilla_flava_2.jpg"
+  description: "..."
+  url: "/birds/motacilla-flava/"
+- id: muscicapa_striata
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Серая мухоловка"
+  latin: "Muscicapa striata"
+  images:
+    - "/images/birds/muscicapa_striata_1.jpg"
+    - "/images/birds/muscicapa_striata_2.jpg"
+  description: "..."
+  url: "/birds/muscicapa-striata/"
+- id: neophron_percnopterus
+  order: "Дневные хищные птицы"
+  family: "Ястребиные"
+  species: "Стервятник"
+  latin: "Neophron percnopterus"
+  images:
+    - "/images/birds/neophron_percnopterus_1.jpg"
+    - "/images/birds/neophron_percnopterus_2.jpg"
+  description: "..."
+  url: "/birds/neophron-percnopterus/"
+- id: netta_rufina
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Красноносый нырок"
+  latin: "Netta rufina"
+  images:
+    - "/images/birds/netta_rufina_1.jpg"
+    - "/images/birds/netta_rufina_2.jpg"
+  description: "..."
+  url: "/birds/netta-rufina/"
+- id: numenius_phaeopus
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Средний кроншнеп"
+  latin: "Numenius phaeopus"
+  images:
+    - "/images/birds/numenius_phaeopus_1.jpg"
+    - "/images/birds/numenius_phaeopus_2.jpg"
+  description: "..."
+  url: "/birds/numenius-phaeopus/"
+- id: numida_meleagris
+  order: "Курообразные"
+  family: "Цесарковые"
+  species: "Шлемоносная цесарка"
+  latin: "Numida meleagris"
+  images:
+    - "/images/birds/numida_meleagris_1.jpg"
+    - "/images/birds/numida_meleagris_2.jpg"
+  description: "..."
+  url: "/birds/numida-meleagris/"
+- id: nycticorax_nycticorax
+  order: "Пеликанообразные"
+  family: "Цаплевые"
+  species: "Кваква"
+  latin: "Nycticorax nycticorax"
+  images:
+    - "/images/birds/nycticorax_nycticorax_1.jpg"
+    - "/images/birds/nycticorax_nycticorax_2.jpg"
+  description: "..."
+  url: "/birds/nycticorax-nycticorax/"
+- id: oenanthe_isabellina
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Каменка-плясунья"
+  latin: "Oenanthe isabellina"
+  images:
+    - "/images/birds/oenanthe_isabellina_1.jpg"
+    - "/images/birds/oenanthe_isabellina_2.jpg"
+  description: "..."
+  url: "/birds/oenanthe-isabellina/"
+- id: oenanthe_melanoleuca
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Черноухая каменка"
+  latin: "Oenanthe melanoleuca"
+  images:
+    - "/images/birds/oenanthe_melanoleuca_1.jpg"
+    - "/images/birds/oenanthe_melanoleuca_2.jpg"
+  description: "..."
+  url: "/birds/oenanthe-melanoleuca/"
+- id: oenanthe_oenanthe
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Каменка"
+  latin: "Oenanthe oenanthe"
+  images:
+    - "/images/birds/oenanthe_oenanthe_1.jpg"
+    - "/images/birds/oenanthe_oenanthe_2.jpg"
+  description: "..."
+  url: "/birds/oenanthe-oenanthe/"
+- id: oenanthe_pleschanka
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Каменка-плешанка"
+  latin: "Oenanthe pleschanka"
+  images:
+    - "/images/birds/oenanthe_pleschanka_1.jpg"
+    - "/images/birds/oenanthe_pleschanka_2.jpg"
+  description: "..."
+  url: "/birds/oenanthe-pleschanka/"
+- id: oriolus_oriolus
+  order: "Воробьинообразные"
+  family: "Иволговые"
+  species: "Иволга"
+  latin: "Oriolus oriolus"
+  images:
+    - "/images/birds/oriolus_oriolus_1.jpg"
+    - "/images/birds/oriolus_oriolus_2.jpg"
+  description: "..."
+  url: "/birds/oriolus-oriolus/"
+- id: otus_scops
+  order: "Совообразные"
+  family: "Совиные"
+  species: "Сплюшка"
+  latin: "Otus scops"
+  images:
+    - "/images/birds/otus_scops_1.jpg"
+    - "/images/birds/otus_scops_2.jpg"
+  description: "..."
+  url: "/birds/otus-scops/"
+- id: parus_major
+  order: "Воробьинообразные"
+  family: "Синицевые"
+  species: "Большая синица"
+  latin: "Parus major"
+  images:
+    - "/images/birds/parus_major_1.jpg"
+    - "/images/birds/parus_major_2.jpg"
+  description: "..."
+  url: "/birds/parus-major/"
+- id: passer_domesticus
+  order: "Воробьинообразные"
+  family: "Воробьиные"
+  species: "Домовый воробей"
+  latin: "Passer domesticus"
+  images:
+    - "/images/birds/passer_domesticus_1.jpg"
+    - "/images/birds/passer_domesticus_2.jpg"
+  description: "..."
+  url: "/birds/passer-domesticus/"
+- id: passer_montanus
+  order: "Воробьинообразные"
+  family: "Воробьиные"
+  species: "Полевой воробей"
+  latin: "Passer montanus"
+  images:
+    - "/images/birds/passer_montanus_1.jpg"
+    - "/images/birds/passer_montanus_2.jpg"
+  description: "..."
+  url: "/birds/passer-montanus/"
+- id: pastor_roseus
+  order: "Воробьинообразные"
+  family: "Скворцовые"
+  species: "Розовый скворец"
+  latin: "Pastor roseus"
+  images:
+    - "/images/birds/pastor_roseus_1.jpg"
+    - "/images/birds/pastor_roseus_2.jpg"
+  description: "..."
+  url: "/birds/pastor-roseus/"
+- id: pelecanus_crispus
+  order: "Пеликанообразные"
+  family: "Пеликановые"
+  species: "Кудрявый пеликан"
+  latin: "Pelecanus crispus"
+  images:
+    - "/images/birds/pelecanus_crispus_1.jpg"
+    - "/images/birds/pelecanus_crispus_2.jpg"
+  description: "..."
+  url: "/birds/pelecanus-crispus/"
+- id: periparus_ater
+  order: "Воробьинообразные"
+  family: "Синицевые"
+  species: "Московка"
+  latin: "Periparus ater"
+  images:
+    - "/images/birds/periparus_ater_1.jpg"
+    - "/images/birds/periparus_ater_2.jpg"
+  description: "..."
+  url: "/birds/periparus-ater/"
+- id: petronia_petronia
+  order: "Воробьинообразные"
+  family: "Воробьиные"
+  species: "Каменный воробей"
+  latin: "Petronia petronia"
+  images:
+    - "/images/birds/petronia_petronia_1.jpg"
+    - "/images/birds/petronia_petronia_2.jpg"
+  description: "..."
+  url: "/birds/petronia-petronia/"
+- id: phalacrocorax_carbo
+  order: "Олушеобразные"
+  family: "Баклановые"
+  species: "большой баклан"
+  latin: "Phalacrocorax carbo"
+  images:
+    - "/images/birds/phalacrocorax_carbo_1.jpg"
+    - "/images/birds/phalacrocorax_carbo_2.jpg"
+  description: "..."
+  url: "/birds/phalacrocorax-carbo/"
+- id: phoenicurus_ochruros
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Горихвостка-чернушка"
+  latin: "Phoenicurus ochruros"
+  images:
+    - "/images/birds/phoenicurus_ochruros_1.jpg"
+    - "/images/birds/phoenicurus_ochruros_2.jpg"
+  description: "..."
+  url: "/birds/phoenicurus-ochruros/"
+- id: phoenicurus_phoenicurus
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Горихвостка-лысушка"
+  latin: "Phoenicurus phoenicurus"
+  images:
+    - "/images/birds/phoenicurus_phoenicurus_1.jpg"
+    - "/images/birds/phoenicurus_phoenicurus_2.jpg"
+  description: "..."
+  url: "/birds/phoenicurus-phoenicurus/"
+- id: phylloscopus_collybita
+  order: "Воробьинообразные"
+  family: "Пеночковые"
+  species: "Пеночка-теньковка"
+  latin: "Phylloscopus collybita"
+  images:
+    - "/images/birds/phylloscopus_collybita_1.jpg"
+    - "/images/birds/phylloscopus_collybita_2.jpg"
+  description: "..."
+  url: "/birds/phylloscopus-collybita/"
+- id: phylloscopus_trochiloides
+  order: "Воробьинообразные"
+  family: "Пеночковые"
+  species: "Зелёная пеночка"
+  latin: "Phylloscopus trochiloides"
+  images:
+    - "/images/birds/phylloscopus_trochiloides_1.jpg"
+    - "/images/birds/phylloscopus_trochiloides_2.jpg"
+  description: "..."
+  url: "/birds/phylloscopus-trochiloides/"
+- id: phylloscopus_trochilus
+  order: "Воробьинообразные"
+  family: "Пеночковые"
+  species: "Пеночка-весничка"
+  latin: "Phylloscopus trochilus"
+  images:
+    - "/images/birds/phylloscopus_trochilus_1.jpg"
+    - "/images/birds/phylloscopus_trochilus_2.jpg"
+  description: "..."
+  url: "/birds/phylloscopus-trochilus/"
+- id: pica_pica
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Сорока"
+  latin: "Pica pica"
+  images:
+    - "/images/birds/pica_pica_1.jpg"
+    - "/images/birds/pica_pica_2.jpg"
+  description: "..."
+  url: "/birds/pica-pica/"
+- id: picus_canus
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Седой дятел"
+  latin: "Picus canus"
+  images:
+    - "/images/birds/picus_canus_1.jpg"
+    - "/images/birds/picus_canus_2.jpg"
+  description: "..."
+  url: "/birds/picus-canus/"
+- id: picus_viridis
+  order: "Дятлообразные"
+  family: "Дятловые"
+  species: "Зелёный дятел"
+  latin: "Picus viridis"
+  images:
+    - "/images/birds/picus_viridis_1.jpg"
+    - "/images/birds/picus_viridis_2.jpg"
+  description: "..."
+  url: "/birds/picus-viridis/"
+- id: pinicola_enucleator
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Щур"
+  latin: "Pinicola enucleator"
+  images:
+    - "/images/birds/pinicola_enucleator_1.jpg"
+    - "/images/birds/pinicola_enucleator_2.jpg"
+  description: "..."
+  url: "/birds/pinicola-enucleator/"
+- id: platalea_leucorodia
+  order: "Пеликанообразные"
+  family: "Ибисовые"
+  species: "Колпица"
+  latin: "Platalea leucorodia"
+  images:
+    - "/images/birds/platalea_leucorodia_1.jpg"
+    - "/images/birds/platalea_leucorodia_2.jpg"
+  description: "..."
+  url: "/birds/platalea-leucorodia/"
+- id: plegadis_falcinellus
+  order: "Пеликанообразные"
+  family: "Ибисовые"
+  species: "Каравайка"
+  latin: "Plegadis falcinellus"
+  images:
+    - "/images/birds/plegadis_falcinellus_1.jpg"
+    - "/images/birds/plegadis_falcinellus_2.jpg"
+  description: "..."
+  url: "/birds/plegadis-falcinellus/"
+- id: pluvialis_squatarola
+  order: "Ржанкообразные"
+  family: "Ржанковые"
+  species: "Тулес"
+  latin: "Pluvialis squatarola"
+  images:
+    - "/images/birds/pluvialis_squatarola_1.jpg"
+    - "/images/birds/pluvialis_squatarola_2.jpg"
+  description: "..."
+  url: "/birds/pluvialis-squatarola/"
+- id: podiceps_cristatus
+  order: "Поганкообразные"
+  family: "Поганковые"
+  species: "Чомга"
+  latin: "Podiceps cristatus"
+  images:
+    - "/images/birds/podiceps_cristatus_1.jpg"
+    - "/images/birds/podiceps_cristatus_2.jpg"
+  description: "..."
+  url: "/birds/podiceps-cristatus/"
+- id: podiceps_grisegena
+  order: "Поганкообразные"
+  family: "Поганковые"
+  species: "Серощёкая поганка"
+  latin: "Podiceps grisegena"
+  images:
+    - "/images/birds/podiceps_grisegena_1.jpg"
+    - "/images/birds/podiceps_grisegena_2.jpg"
+  description: "..."
+  url: "/birds/podiceps-grisegena/"
+- id: podiceps_nigricollis
+  order: "Поганкообразные"
+  family: "Поганковые"
+  species: "Черношейная поганка"
+  latin: "Podiceps nigricollis"
+  images:
+    - "/images/birds/podiceps_nigricollis_1.jpg"
+    - "/images/birds/podiceps_nigricollis_2.jpg"
+  description: "..."
+  url: "/birds/podiceps-nigricollis/"
+- id: poecile_montanus
+  order: "Воробьинообразные"
+  family: "Синицевые"
+  species: "Пухляк"
+  latin: "Poecile montanus"
+  images:
+    - "/images/birds/poecile_montanus_1.jpg"
+    - "/images/birds/poecile_montanus_2.jpg"
+  description: "..."
+  url: "/birds/poecile-montanus/"
+- id: poecile_palustris
+  order: "Воробьинообразные"
+  family: "Синицевые"
+  species: "Черноголовая гаичка"
+  latin: "Poecile palustris"
+  images:
+    - "/images/birds/poecile_palustris_1.jpg"
+    - "/images/birds/poecile_palustris_2.jpg"
+  description: "..."
+  url: "/birds/poecile-palustris/"
+- id: ptyonoprogne_rupestris
+  order: "Воробьинообразные"
+  family: "Ласточковые"
+  species: "Скальная ласточка"
+  latin: "Ptyonoprogne rupestris"
+  images:
+    - "/images/birds/ptyonoprogne_rupestris_1.jpg"
+    - "/images/birds/ptyonoprogne_rupestris_2.jpg"
+  description: "..."
+  url: "/birds/ptyonoprogne-rupestris/"
+- id: puffinus_yelkouan
+  order: "Буревестникообразные"
+  family: "Буревестниковые"
+  species: "Левантский буревестник"
+  latin: "Puffinus yelkouan"
+  images:
+    - "/images/birds/puffinus_yelkouan_1.jpg"
+    - "/images/birds/puffinus_yelkouan_2.jpg"
+  description: "..."
+  url: "/birds/puffinus-yelkouan/"
+- id: pyrrhocorax_pyrrhocorax
+  order: "Воробьинообразные"
+  family: "Врановые"
+  species: "Клушица"
+  latin: "Pyrrhocorax pyrrhocorax"
+  images:
+    - "/images/birds/pyrrhocorax_pyrrhocorax_1.jpg"
+    - "/images/birds/pyrrhocorax_pyrrhocorax_2.jpg"
+  description: "..."
+  url: "/birds/pyrrhocorax-pyrrhocorax/"
+- id: pyrrhula_pyrrhula
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Снегирь"
+  latin: "Pyrrhula pyrrhula"
+  images:
+    - "/images/birds/pyrrhula_pyrrhula_1.jpg"
+    - "/images/birds/pyrrhula_pyrrhula_2.jpg"
+  description: "..."
+  url: "/birds/pyrrhula-pyrrhula/"
+- id: regulus_regulus
+  order: "Воробьинообразные"
+  family: "Корольковые"
+  species: "Желтоголовый королёк"
+  latin: "Regulus regulus"
+  images:
+    - "/images/birds/regulus_regulus_1.jpg"
+    - "/images/birds/regulus_regulus_2.jpg"
+  description: "..."
+  url: "/birds/regulus-regulus/"
+- id: remiz_pendulinus
+  order: "Воробьинообразные"
+  family: "Ремезовые"
+  species: "Ремез"
+  latin: "Remiz pendulinus"
+  images:
+    - "/images/birds/remiz_pendulinus_1.jpg"
+    - "/images/birds/remiz_pendulinus_2.jpg"
+  description: "..."
+  url: "/birds/remiz-pendulinus/"
+- id: riparia_riparia
+  order: "Воробьинообразные"
+  family: "Ласточковые"
+  species: "Береговушка"
+  latin: "Riparia riparia"
+  images:
+    - "/images/birds/riparia_riparia_1.jpg"
+    - "/images/birds/riparia_riparia_2.jpg"
+  description: "..."
+  url: "/birds/riparia-riparia/"
+- id: saxicola_maurus
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Азиатский черноголовый чекан"
+  latin: "Saxicola maurus"
+  images:
+    - "/images/birds/saxicola_maurus_1.jpg"
+    - "/images/birds/saxicola_maurus_2.jpg"
+  description: "..."
+  url: "/birds/saxicola-maurus/"
+- id: saxicola_rubetra
+  order: "Воробьинообразные"
+  family: "Мухоловковые"
+  species: "Луговой чекан"
+  latin: "Saxicola rubetra"
+  images:
+    - "/images/birds/saxicola_rubetra_1.jpg"
+    - "/images/birds/saxicola_rubetra_2.jpg"
+  description: "..."
+  url: "/birds/saxicola-rubetra/"
+- id: sitta_europaea
+  order: "Воробьинообразные"
+  family: "Поползневые"
+  species: "Поползень"
+  latin: "Sitta europaea"
+  images:
+    - "/images/birds/sitta_europaea_1.jpg"
+    - "/images/birds/sitta_europaea_2.jpg"
+  description: "..."
+  url: "/birds/sitta-europaea/"
+- id: spatula_clypeata
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Широконоска"
+  latin: "Spatula clypeata"
+  images:
+    - "/images/birds/spatula_clypeata_1.jpg"
+    - "/images/birds/spatula_clypeata_2.jpg"
+  description: "..."
+  url: "/birds/spatula-clypeata/"
+- id: spatula_querquedula
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Чирок-трескунок"
+  latin: "Spatula querquedula"
+  images:
+    - "/images/birds/spatula_querquedula_1.jpg"
+    - "/images/birds/spatula_querquedula_2.jpg"
+  description: "..."
+  url: "/birds/spatula-querquedula/"
+- id: spilopelia_senegalensis
+  order: "Голубеобразные"
+  family: "Голубиные"
+  species: "Малая горлица"
+  latin: "Spilopelia senegalensis"
+  images:
+    - "/images/birds/spilopelia_senegalensis_1.jpg"
+    - "/images/birds/spilopelia_senegalensis_2.jpg"
+  description: "..."
+  url: "/birds/spilopelia-senegalensis/"
+- id: spinus_spinus
+  order: "Воробьинообразные"
+  family: "Вьюрковые"
+  species: "Чиж"
+  latin: "Spinus spinus"
+  images:
+    - "/images/birds/spinus_spinus_1.jpg"
+    - "/images/birds/spinus_spinus_2.jpg"
+  description: "..."
+  url: "/birds/spinus-spinus/"
+- id: sterna_hirundo
+  order: "Ржанкообразные"
+  family: "Чайковые"
+  species: "Речная крачка"
+  latin: "Sterna hirundo"
+  images:
+    - "/images/birds/sterna_hirundo_1.jpg"
+    - "/images/birds/sterna_hirundo_2.jpg"
+  description: "..."
+  url: "/birds/sterna-hirundo/"
+- id: streptopelia_decaocto
+  order: "Голубеобразные"
+  family: "Голубиные"
+  species: "Кольчатая горлица"
+  latin: "Streptopelia decaocto"
+  images:
+    - "/images/birds/streptopelia_decaocto_1.jpg"
+    - "/images/birds/streptopelia_decaocto_2.jpg"
+  description: "..."
+  url: "/birds/streptopelia-decaocto/"
+- id: strix_nebulosa
+  order: "Совообразные"
+  family: "Совиные"
+  species: "Бородатая неясыть"
+  latin: "Strix nebulosa"
+  images:
+    - "/images/birds/strix_nebulosa_1.jpg"
+    - "/images/birds/strix_nebulosa_2.jpg"
+  description: "..."
+  url: "/birds/strix-nebulosa/"
+- id: sturnus_vulgaris
+  order: "Воробьинообразные"
+  family: "Скворцовые"
+  species: "Скворец"
+  latin: "Sturnus vulgaris"
+  images:
+    - "/images/birds/sturnus_vulgaris_1.jpg"
+    - "/images/birds/sturnus_vulgaris_2.jpg"
+  description: "..."
+  url: "/birds/sturnus-vulgaris/"
+- id: sylvia_atricapilla
+  order: "Воробьинообразные"
+  family: "Славковые"
+  species: "Славка-черноголовка"
+  latin: "Sylvia atricapilla"
+  images:
+    - "/images/birds/sylvia_atricapilla_1.jpg"
+    - "/images/birds/sylvia_atricapilla_2.jpg"
+  description: "..."
+  url: "/birds/sylvia-atricapilla/"
+- id: tachybaptus_ruficollis
+  order: "Поганкообразные"
+  family: "Поганковые"
+  species: "Малая поганка"
+  latin: "Tachybaptus ruficollis"
+  images:
+    - "/images/birds/tachybaptus_ruficollis_1.jpg"
+    - "/images/birds/tachybaptus_ruficollis_2.jpg"
+  description: "..."
+  url: "/birds/tachybaptus-ruficollis/"
+- id: tachymarptis_melba
+  order: "Стрижеобразные"
+  family: "Стрижиные"
+  species: "Белобрюхий стриж"
+  latin: "Tachymarptis melba"
+  images:
+    - "/images/birds/tachymarptis_melba_1.jpg"
+    - "/images/birds/tachymarptis_melba_2.jpg"
+  description: "..."
+  url: "/birds/tachymarptis-melba/"
+- id: tadorna_ferruginea
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Огарь"
+  latin: "Tadorna ferruginea"
+  images:
+    - "/images/birds/tadorna_ferruginea_1.jpg"
+    - "/images/birds/tadorna_ferruginea_2.jpg"
+  description: "..."
+  url: "/birds/tadorna-ferruginea/"
+- id: tadorna_tadorna
+  order: "Гусеобразные"
+  family: "Утиные"
+  species: "Пеганка"
+  latin: "Tadorna tadorna"
+  images:
+    - "/images/birds/tadorna_tadorna_1.jpg"
+    - "/images/birds/tadorna_tadorna_2.jpg"
+  description: "..."
+  url: "/birds/tadorna-tadorna/"
+- id: thinornis_dubius
+  order: "Ржанкообразные"
+  family: "Ржанковые"
+  species: "Малый зуёк"
+  latin: "Thinornis dubius"
+  images:
+    - "/images/birds/thinornis_dubius_1.jpg"
+    - "/images/birds/thinornis_dubius_2.jpg"
+  description: "..."
+  url: "/birds/thinornis-dubius/"
+- id: tringa_glareola
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Фифи"
+  latin: "Tringa glareola"
+  images:
+    - "/images/birds/tringa_glareola_1.jpg"
+    - "/images/birds/tringa_glareola_2.jpg"
+  description: "..."
+  url: "/birds/tringa-glareola/"
+- id: troglodytes_troglodytes
+  order: "Воробьинообразные"
+  family: "Крапивниковые"
+  species: "Крапивник"
+  latin: "Troglodytes troglodytes"
+  images:
+    - "/images/birds/troglodytes_troglodytes_1.jpg"
+    - "/images/birds/troglodytes_troglodytes_2.jpg"
+  description: "..."
+  url: "/birds/troglodytes-troglodytes/"
+- id: turdus_iliacus
+  order: "Воробьинообразные"
+  family: "Дроздовые"
+  species: "Белобровик"
+  latin: "Turdus iliacus"
+  images:
+    - "/images/birds/turdus_iliacus_1.jpg"
+    - "/images/birds/turdus_iliacus_2.jpg"
+  description: "..."
+  url: "/birds/turdus-iliacus/"
+- id: turdus_merula
+  order: "Воробьинообразные"
+  family: "Дроздовые"
+  species: "Чёрный дрозд"
+  latin: "Turdus merula"
+  images:
+    - "/images/birds/turdus_merula_1.jpg"
+    - "/images/birds/turdus_merula_2.jpg"
+  description: "..."
+  url: "/birds/turdus-merula/"
+- id: turdus_pilaris
+  order: "Воробьинообразные"
+  family: "Дроздовые"
+  species: "Рябинник"
+  latin: "Turdus pilaris"
+  images:
+    - "/images/birds/turdus_pilaris_1.jpg"
+    - "/images/birds/turdus_pilaris_2.jpg"
+  description: "..."
+  url: "/birds/turdus-pilaris/"
+- id: turdus_viscivorus
+  order: "Воробьинообразные"
+  family: "Дроздовые"
+  species: "Деряба"
+  latin: "Turdus viscivorus"
+  images:
+    - "/images/birds/turdus_viscivorus_1.jpg"
+    - "/images/birds/turdus_viscivorus_2.jpg"
+  description: "..."
+  url: "/birds/turdus-viscivorus/"
+- id: upupa_epops
+  order: "Птицы-носороги"
+  family: "Удодовые"
+  species: "Удод"
+  latin: "Upupa epops"
+  images:
+    - "/images/birds/upupa_epops_1.jpg"
+    - "/images/birds/upupa_epops_2.jpg"
+  description: "..."
+  url: "/birds/upupa-epops/"
+- id: vanellus_leucurus
+  order: "Ржанкообразные"
+  family: "Ржанковые"
+  species: "Белохвостая пигалица"
+  latin: "Vanellus leucurus"
+  images:
+    - "/images/birds/vanellus_leucurus_1.jpg"
+    - "/images/birds/vanellus_leucurus_2.jpg"
+  description: "..."
+  url: "/birds/vanellus-leucurus/"
+- id: vanellus_vanellus
+  order: "Ржанкообразные"
+  family: "Ржанковые"
+  species: "Чибис"
+  latin: "Vanellus vanellus"
+  images:
+    - "/images/birds/vanellus_vanellus_1.jpg"
+    - "/images/birds/vanellus_vanellus_2.jpg"
+  description: "..."
+  url: "/birds/vanellus-vanellus/"
+- id: xenus_cinereus
+  order: "Ржанкообразные"
+  family: "Бекасовые"
+  species: "Мородунка"
+  latin: "Xenus cinereus"
+  images:
+    - "/images/birds/xenus_cinereus_1.jpg"
+    - "/images/birds/xenus_cinereus_2.jpg"
+  description: "..."
+  url: "/birds/xenus-cinereus/"
