@@ -1,0 +1,10 @@
+- id: gavia_arctica              # уникальный идентификатор (латынь без пробелов)
+  order: "Гагарообразные"
+  family: "Гагаровые"
+  species: "Гагара чернозобая"
+  latin: "Gavia arctica"
+  images:
+    - "/images/birds/gavia_arctica_1.jpg"
+    - "/images/birds/gavia_arctica_2.jpg"   # можно добавить сколько угодно
+  description: "Краткое описание вида..."    # опционально
+  url: "/birds/gavia-arctica/"              # адрес страницы вида
