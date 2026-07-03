@@ -535,27 +535,27 @@ h1 {
   color: var(--text-color);
   margin: 30px 0 8px 0;
   letter-spacing: 1px;
-  border-bottom: 2px solid #d0d0c8;
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 6px;
 }
 
 .family-header h3 {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #444;
+  color: var(--text-color);
+  opacity: 0.8;
   margin: 18px 0 8px 0;
   letter-spacing: 0.5px;
-  opacity: 0.8;
-  border-left: 4px solid #b0b0a8;
+  border-left: 4px solid var(--border-color);
   padding-left: 12px;
 }
 
-/* Карточка вида – теперь просто ячейка грида */
+/* Карточка вида – ячейка грида */
 .bird-card {
   aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #f0f0e8;
+  background-color: var(--card-bg);
   position: relative;
   cursor: pointer;
 }
@@ -577,17 +577,17 @@ h1 {
   margin-top: 4px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #333;
+  color: var(--text-color);
 }
 
 .bird-caption a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   transition: color 0.2s;
 }
 
 .bird-caption a:hover {
-  color: #000;
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -599,20 +599,20 @@ h1 {
 
 .btn-toggle {
   background: none;
-  border: 2px solid #ccc;
+  border: 2px solid var(--border-color);
   border-radius: 30px;
   padding: 8px 20px;
   font-size: 0.95rem;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
-  background-color: #f9f9f2;
+  background-color: var(--card-bg);
   transition: all 0.2s;
-  color: #333;
+  color: var(--text-color);
 }
 
 .btn-toggle:hover {
-  background-color: #e0e0d8;
+  background-color: var(--border-color);
 }
 
 /* При скрытой систематике заголовки исчезают */
@@ -621,8 +621,7 @@ h1 {
   display: none;
 }
 
-/* Адаптивность уже встроена благодаря auto-fill и minmax */
-/* Можно дополнительно настроить минимальный размер колонки для телефонов */
+/* Адаптивность для телефонов */
 @media (max-width: 600px) {
   .birds-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
