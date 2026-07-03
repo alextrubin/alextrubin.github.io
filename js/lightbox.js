@@ -99,3 +99,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // ... существующий код лайтбокса ...
+
+  // ===== Переключение систематики на странице птиц =====
+  const toggleBtn = document.getElementById('toggle-taxonomy');
+  const container = document.getElementById('birdsContainer');
+  if (toggleBtn && container) {
+    toggleBtn.addEventListener('click', function() {
+      container.classList.toggle('hide-taxonomy');
+      if (container.classList.contains('hide-taxonomy')) {
+        toggleBtn.textContent = 'Показать систематику';
+      } else {
+        toggleBtn.textContent = 'Скрыть систематику';
+      }
+    });
+  }
+});
