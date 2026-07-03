@@ -514,16 +514,21 @@ h1 {
 
 
 
-
 /* ===== Страница птиц ===== */
 .birds-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-/* Заголовки отрядов и семейств */
+/* Заголовки отрядов и семейств – занимают всю ширину сетки */
+.order-header,
+.family-header {
+  grid-column: 1 / -1;
+}
+
 .order-header h2 {
   font-size: 2rem;
   font-weight: 600;
@@ -545,49 +550,8 @@ h1 {
   padding-left: 12px;
 }
 
-/* Сетка карточек (квадратные) */
+/* Карточка вида – теперь просто ячейка грида */
 .bird-card {
-  display: inline-block;
-  width: 100%;
-  max-width: 200px; /* можно регулировать */
-  aspect-ratio: 1 / 1;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: #f0f0e8;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-/* Но мы хотим, чтобы карточки были в гибкой сетке. Лучше использовать grid для всей группы карточек. */
-/* Поэтому изменим подход: обернём все карточки в общий grid-контейнер */
-/* Для этого в HTML добавим контейнер .bird-grid внутри .birds-container, но я переделаю, чтобы не менять структуру. 
-
-Проще: все элементы .bird-card будут внутри .birds-container, но мы можем задать .birds-container как grid. Однако тогда заголовки тоже станут grid-элементами. 
-Лучше сделать .bird-grid отдельно для карточек, но у нас заголовки перемежаются с карточками. 
-
-Реализация: оставим как есть, но обернём карточки каждого таксона в отдельный div? Нет, тогда сложно перестраивать при скрытии заголовков.
-
-Я предлагаю следующее: .birds-container сделать flex-контейнером с flex-wrap, а карточки задать фиксированную ширину с учетом переноса. Тогда заголовки будут занимать всю ширину (width: 100%), а карточки - ширину в зависимости от размера экрана. Это проще.
-
-Итак, обновим CSS: */
-
-.birds-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
-  margin-top: 30px;    /* отступ сверху от предыдущего элемента */
-  margin-bottom: 40px;
-}
-
-.order-header,
-.family-header {
-  width: 100%; /* занимают всю строку */
-  flex: 0 0 100%;
-}
-
-.bird-card {
-  flex: 0 0 calc(25% - 12px); /* по 4 карточки в ряд на широком экране */
-  max-width: calc(25% - 12px);
   aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
@@ -627,7 +591,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* Кнопка переключения */
+/* Кнопка переключения систематики */
 .taxonomy-toggle {
   text-align: right;
   margin: 10px 0;
@@ -651,28 +615,17 @@ h1 {
   background-color: #e0e0d8;
 }
 
-/* Скрытие систематики */
+/* При скрытой систематике заголовки исчезают */
 .hide-taxonomy .order-header,
 .hide-taxonomy .family-header {
   display: none;
 }
 
-/* Адаптив для карточек */
-@media (max-width: 900px) {
-  .bird-card {
-    flex: 0 0 calc(33.333% - 12px);
-    max-width: calc(33.333% - 12px);
-  }
-}
+/* Адаптивность уже встроена благодаря auto-fill и minmax */
+/* Можно дополнительно настроить минимальный размер колонки для телефонов */
 @media (max-width: 600px) {
-  .bird-card {
-    flex: 0 0 calc(50% - 12px);
-    max-width: calc(50% - 12px);
-  }
-}
-@media (max-width: 400px) {
-  .bird-card {
-    flex: 0 0 calc(100% - 12px);
-    max-width: calc(100% - 12px);
+  .birds-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
   }
 }
