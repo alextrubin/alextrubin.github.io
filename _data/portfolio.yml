@@ -4,7 +4,7 @@ og_image: /images/portfolio/og.jpg   # превью для Telegram/почты, 
 ui:
   name:     {ru: "Алексей Трубин", en: "Alexey Trubin"}
   role:     {ru: "фотограф дикой природы", en: "wildlife photographer"}
-  intro:    {ru: "Птицы и другая дикая природа. Иногда макро, портреты и звёздное небо.", en: "Birds and other wildlife. Sometimes macro, portraits and the night sky."}
+  intro:    {ru: "Не устаю восхищаться жизнью во всех её проявлениях и замечать повсюду её красоту", en: "Birds and other wildlife. Sometimes macro, portraits and the night sky."}
   about:    {ru: "Обо мне", en: "About"}
   contact:  {ru: "Контакты", en: "Contact"}
   rights:   {ru: "Все права защищены", en: "All rights reserved"}
@@ -24,11 +24,13 @@ sections:
 
 about:
   ru:
-    - "Фотографирую птиц и другую дикую природу. Это основное, к чему я возвращаюсь снова и снова."
-    - "Для разнообразия снимаю макро, портреты и звёздное небо"
+    - "Горю природой и фотографией с самого детства."
+    - "Не устаю восхищаться жизнью во всех её проявлениях и замечать повсюду её красоту."
+    - "Мечтаю объездить как можно больше мест, посмотреть всё многообразие природы нашей планеты"
   en:
-    - "I photograph birds and other wildlife. It is what I keep coming back to."
-    - "For a change I shoot macro, portraits and the night sky"
+    - "Nature and photography have been my passion since childhood."
+    - "I never cease to marvel at life in all its manifestations and to notice its beauty everywhere."
+    - "I dream of traveling to as many places as I can and seeing the full diversity of nature on our planet"
 
 contacts:
   - {label: "Email — aleks_trubin@mail.ru", url: "mailto:aleks_trubin@mail.ru"}
