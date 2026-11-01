@@ -1,10 +1,6 @@
-# _config.yml
-title: "Мои чудесные маленькие друзья"
-description: "Личный сайт фотографа Алексея Трубина"
-baseurl: ""   # если сайт в корне репозитория, оставь пустым
-url: "https://твой-логин.github.io"  # подставь свой адрес
-lang: ru      # язык по умолчанию
-
-# Для поддержки мультиязычности можно добавить
-languages: ["ru", "en"]
-default_lang: "ru"
+title: "Алексей Трубин"
+description: "Фотограф дикой природы"
+url: "https://alextrubin.github.io"
+baseurl: ""
+lang: ru
+exclude: [README.md, index_old.html]

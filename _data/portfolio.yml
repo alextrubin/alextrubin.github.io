@@ -1,0 +1,41 @@
+# ВСЁ содержимое портфолио редактируется здесь.
+og_image: /images/portfolio/og.jpg   # превью для Telegram/почты, 1200x630
+
+ui:
+  name:     {ru: "Алексей Трубин", en: "Alexey Trubin"}
+  role:     {ru: "фотограф дикой природы", en: "wildlife photographer"}
+  intro:    {ru: "Птицы и другая дикая природа. Иногда макро, портреты и звёздное небо.", en: "Birds and other wildlife. Sometimes macro, portraits and the night sky."}
+  about:    {ru: "Обо мне", en: "About"}
+  contact:  {ru: "Контакты", en: "Contact"}
+  rights:   {ru: "Все права защищены. Использование фотографий — только с моего письменного согласия.", en: "All rights reserved. Photographs may not be used without written permission."}
+
+# Первая секция: её первый кадр становится большим кадром вверху страницы.
+sections:
+  - id: wildlife
+    title: {ru: "Дикая природа", en: "Wildlife"}
+    photos:
+      - {src: "/images/DSC_6899-1 копия.jpg", ru: "Жёлтая трясогузка", en: "Yellow wagtail"}
+      - {src: "/images/DSC_7043-1 копия.jpg", ru: "Чёрный дрозд", en: "Common blackbird"}
+      # - {src: /images/portfolio/wildlife/03.jpg, full: /images/portfolio/wildlife/full/03.jpg, ru: "Подпись", en: "Caption"}
+  - id: macro
+    title: {ru: "Макро", en: "Macro"}
+    photos: []
+  - id: portraits
+    title: {ru: "Портреты", en: "Portraits"}
+    photos: []
+  - id: astro
+    title: {ru: "Астрофото", en: "Astrophotography"}
+    photos: []
+
+about:
+  ru:
+    - "Фотографирую птиц и другую дикую природу. Это основное, к чему я возвращаюсь снова и снова."
+    - "Для разнообразия снимаю макро, портреты и звёздное небо. (Замени этот текст своим.)"
+  en:
+    - "I photograph birds and other wildlife. It is what I keep coming back to."
+    - "For a change I shoot macro, portraits and the night sky. (Replace this text with your own.)"
+
+contacts:
+  - {label: "Email — your@email.com", url: "mailto:your@email.com"}
+  - {label: "Telegram — @username", url: "https://t.me/username"}
+  # - {label: "Instagram — @username", url: "https://instagram.com/username"}

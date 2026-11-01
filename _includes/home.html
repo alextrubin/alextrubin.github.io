@@ -1,0 +1,14 @@
+{% assign d = site.data.portfolio %}{% assign l = page.lang %}
+{% assign hero = d.sections[0].photos[0] %}
+{% if hero %}{% assign hc = hero[l] | default: hero.ru %}
+<a href="#" class="hero lightbox-trigger" data-image="{{ hero.full | default: hero.src }}" data-caption="{{ hc }}"><img src="{{ hero.src }}" alt="{{ hc }}"></a>{% endif %}
+<section class="intro"><h1>{{ d.ui.name[l] }}</h1><p>{{ d.ui.role[l] | capitalize }}. {{ d.ui.intro[l] }}</p></section>
+{% for s in d.sections %}{% if s.photos.size > 0 %}
+<section class="sec" id="{{ s.id }}"><h2>{{ s.title[l] }}</h2>
+<div class="g">{% for p in s.photos %}{% if forloop.first and forloop.parentloop.first %}{% continue %}{% endif %}{% assign cap = p[l] | default: p.ru %}
+<a href="#" class="lightbox-trigger" data-image="{{ p.full | default: p.src }}" data-caption="{{ cap }}"><img src="{{ p.src }}" alt="{{ cap }}"></a>{% endfor %}</div></section>
+{% endif %}{% endfor %}
+<section class="sec" id="about"><h2>{{ d.ui.about[l] }}</h2>
+<div class="about"><img src="/images/me.jpg" alt="{{ d.ui.name[l] }}"><div>{% for t in d.about[l] %}<p>{{ t }}</p>{% endfor %}</div></div></section>
+<section class="sec" id="contact"><h2>{{ d.ui.contact[l] }}</h2>
+<div class="contacts">{% for c in d.contacts %}<a href="{{ c.url }}">{{ c.label }}</a>{% endfor %}</div></section>
