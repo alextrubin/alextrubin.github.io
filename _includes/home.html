@@ -1,13 +1,14 @@
 {% assign d = site.data.portfolio %}{% assign l = page.lang %}
-{% assign hero = d.sections[0].photos[0] %}
-{% if hero %}{% assign hc = hero[l] | default: hero.ru %}
-<a href="#" class="hero lightbox-trigger" data-image="{{ hero.full | default: hero.src }}" data-caption="{{ hc }}"><img src="{{ hero.src }}" alt="{{ hc }}"></a>{% endif %}
+{% assign pre0 = '/images/portfolio/' | append: d.sections[0].id | append: '/' %}
+{% assign first = site.static_files | where_exp: "f", "f.path contains pre0" | sort: "path" | first %}
+{% if first %}{% assign k0 = d.sections[0].id | append: '/' | append: first.name %}{% assign hc = d.captions[k0][l] | default: '' %}
+<a href="#" class="hero lightbox-trigger" data-image="{{ first.path }}" data-caption="{{ hc }}"><img src="{{ first.path }}" alt="{{ hc | default: d.ui.name[l] }}"></a>{% endif %}
 <section class="intro"><h1>{{ d.ui.name[l] }}</h1><p>{{ d.ui.role[l] | capitalize }}. {{ d.ui.intro[l] }}</p></section>
-{% for s in d.sections %}{% if s.photos.size > 0 %}
-<section class="sec" id="{{ s.id }}"><h2>{{ s.title[l] }}</h2>
-<div class="g">{% for p in s.photos %}{% if forloop.first and forloop.parentloop.first %}{% continue %}{% endif %}{% assign cap = p[l] | default: p.ru %}
-<a href="#" class="lightbox-trigger" data-image="{{ p.full | default: p.src }}" data-caption="{{ cap }}"><img src="{{ p.src }}" alt="{{ cap }}"></a>{% endfor %}</div></section>
-{% endif %}{% endfor %}
+{% for s in d.sections %}{% assign pre = '/images/portfolio/' | append: s.id | append: '/' %}
+{% assign files = site.static_files | where_exp: "f", "f.path contains pre" | sort: "path" %}
+{% if files.size > 0 %}<section class="sec" id="{{ s.id }}"><h2>{{ s.title[l] }}</h2>
+<div class="g">{% for f in files %}{% if forloop.first and forloop.parentloop.first %}{% continue %}{% endif %}{% assign k = s.id | append: '/' | append: f.name %}{% assign cap = d.captions[k][l] | default: '' %}
+<a href="#" class="lightbox-trigger" data-image="{{ f.path }}" data-caption="{{ cap }}"><img src="{{ f.path }}" alt="{{ cap | default: s.title[l] }}"></a>{% endfor %}</div></section>{% endif %}{% endfor %}
 <section class="sec" id="about"><h2>{{ d.ui.about[l] }}</h2>
 <div class="about"><img src="/images/me.jpg" alt="{{ d.ui.name[l] }}"><div>{% for t in d.about[l] %}<p>{{ t }}</p>{% endfor %}</div></div></section>
 <section class="sec" id="contact"><h2>{{ d.ui.contact[l] }}</h2>

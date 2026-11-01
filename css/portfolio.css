@@ -2,21 +2,21 @@
 body.dark-theme{--bg:#141414;--fg:#e9e8e4;--mute:#8b8983;--line:#2a2a2a}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{background:var(--bg);color:var(--fg);font:300 1rem/1.7 'Hanken Grotesk',sans-serif;transition:background .3s,color .3s}
+body{background:var(--bg);color:var(--fg);font:400 1rem/1.7 'Montserrat',sans-serif;transition:background .3s,color .3s}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:1px solid var(--fg);outline-offset:3px}
 .top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;padding:16px 4vw;background:var(--bg)}
-.brand{font:400 1.15rem 'Newsreader',serif}
+.brand{font:400 1.15rem 'Cormorant Garamond',serif}
 .top nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 26px;font-size:.88rem}
 .top nav a{color:var(--mute);transition:color .2s}.top nav a:hover{color:var(--fg)}
 .theme-btn{background:none;border:0;cursor:pointer;filter:grayscale(1);font-size:1rem}
 .hero{display:block;padding:0 4vw}
 .hero img{display:block;max-width:100%;max-height:86vh;width:auto;height:auto;margin:0 auto}
 .intro{padding:9vh 4vw 12vh}
-.intro h1{font:300 clamp(2.4rem,6vw,5rem)/1.05 'Newsreader',serif;letter-spacing:-.015em}
+.intro h1{font:300 clamp(2.4rem,6vw,5rem)/1.05 'Cormorant Garamond',serif;letter-spacing:-.015em}
 .intro p{margin-top:1.2rem;color:var(--mute);max-width:36rem}
 .sec{padding:0 4vw 12vh}
-.sec h2{font:300 1.7rem 'Newsreader',serif;border-top:1px solid var(--line);padding-top:16px;margin-bottom:28px}
+.sec h2{font:300 1.7rem 'Cormorant Garamond',serif;border-top:1px solid var(--line);padding-top:16px;margin-bottom:28px}
 .g{display:flex;flex-wrap:wrap;gap:8px;opacity:0;transition:opacity .6s}.g.ready{opacity:1}
 .g a{display:block;flex:none;overflow:hidden;background:var(--line)}
 .g img{display:block;width:100%;height:100%;object-fit:cover}
@@ -34,3 +34,19 @@ footer{padding:4vh 4vw;color:var(--mute);font-size:.8rem;border-top:1px solid va
 .close-lightbox{top:14px;right:24px}.lightbox-prev{left:1.5vw;top:50%}.lightbox-next{right:1.5vw;top:50%}
 @media(max-width:700px){.about{grid-template-columns:1fr}.hero,.intro,.sec,.top{padding-left:14px;padding-right:14px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* v2: плашки, меню как на старом сайте, кириллические шрифты */
+:root{--card:#fff;--shadow:rgba(0,0,0,.08)}
+body.dark-theme{--card:#1e1e1e;--shadow:rgba(0,0,0,.55)}
+.top{box-shadow:0 2px 16px var(--shadow)}
+.brand{font:600 1.45rem 'Cormorant Garamond',serif;letter-spacing:.02em}
+.nav-menu ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 18px}
+.nav-menu li{display:inline}
+.nav-menu li:not(:last-child)::after{content:"|";color:var(--line);margin-left:18px}
+.top .nav-menu a{font-size:.95rem;font-weight:500;color:var(--fg);padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.top .nav-menu a:hover,.top .nav-menu a.active{border-bottom-color:var(--fg)}
+.intro{margin:0 4vw 12vh;padding:6vh 5vw;background:var(--card);box-shadow:0 6px 24px var(--shadow)}
+.intro h1{font-weight:600}
+.sec h2{font:600 2.2rem 'Cormorant Garamond',serif;border-top:0;padding-top:0}
+.about,.contacts{background:var(--card);box-shadow:0 6px 24px var(--shadow);padding:3vw}
+.contacts a{max-width:none}
+@media(max-width:700px){.intro{margin:0 14px 8vh}}

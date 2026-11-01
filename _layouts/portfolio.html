@@ -9,19 +9,19 @@
 <meta property="og:description" content="{{ d.ui.intro[l] }}"><meta property="og:image" content="{{ site.url }}{{ d.og_image }}">
 <link rel="alternate" hreflang="ru" href="{{ site.url }}/"><link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
 <link rel="icon" href="/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;1,300&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/portfolio.css">
 </head>
 <body>
 <script>try{if(!localStorage.theme)localStorage.theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';if(localStorage.theme==='dark')document.body.classList.add('dark-theme')}catch(e){}</script>
 <header class="top">
-  <a class="brand" href="{{ page.home }}">{{ d.ui.name[l] }}</a>
-  <nav>
-    {% for s in d.sections %}{% if s.photos.size > 0 %}<a href="#{{ s.id }}">{{ s.title[l] }}</a>{% endif %}{% endfor %}
-    <a href="#about">{{ d.ui.about[l] }}</a><a href="#contact">{{ d.ui.contact[l] }}</a>
-    <a href="{{ page.alt }}" hreflang="{{ page.alt_label | downcase }}">{{ page.alt_label }}</a>
-    <button id="theme-toggle" class="theme-btn" aria-label="Theme">🌙</button>
-  </nav>
+  <span class="brand">{{ d.ui.brand[l] }}</span>
+  <nav class="nav-menu"><ul>
+    {% for s in d.sections %}{% assign pre = '/images/portfolio/' | append: s.id | append: '/' %}{% assign n = site.static_files | where_exp: "f", "f.path contains pre" %}{% if n.size > 0 %}<li><a href="#{{ s.id }}">{{ s.title[l] }}</a></li>{% endif %}{% endfor %}
+    <li><a href="#about">{{ d.ui.about[l] }}</a></li><li><a href="#contact">{{ d.ui.contact[l] }}</a></li>
+    <li><a href="{{ page.alt }}" hreflang="{{ page.alt_label | downcase }}">{{ page.alt_label }}</a></li>
+  </ul></nav>
+  <button id="theme-toggle" class="theme-btn" aria-label="Theme">🌙</button>
 </header>
 <main>{{ content }}</main>
 <footer>© {{ 'now' | date: '%Y' }} {{ d.ui.name[l] }}. {{ d.ui.rights[l] }}</footer>

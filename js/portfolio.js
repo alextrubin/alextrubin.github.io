@@ -21,3 +21,14 @@
     });
   });
 })();
+// Подсветка пункта меню для текущей секции
+(function(){
+  var L={};document.querySelectorAll('.nav-menu a[href^="#"]').forEach(function(a){L[a.hash.slice(1)]=a});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    for(var k in L)L[k].classList.remove('active');
+    if(L[e.target.id])L[e.target.id].classList.add('active');
+  })},{rootMargin:'-30% 0px -60% 0px'});
+  document.querySelectorAll('.sec').forEach(function(s){io.observe(s)});
+})();
