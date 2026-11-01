@@ -18,24 +18,27 @@ sections:
       - {src: "/images/DSC_7043-1 копия.jpg", ru: "Чёрный дрозд", en: "Common blackbird"}
       # - {src: /images/portfolio/wildlife/03.jpg, full: /images/portfolio/wildlife/full/03.jpg, ru: "Подпись", en: "Caption"}
   - id: macro
-    title: {ru: "Макро", en: "Macro"}
+    title: {ru: "Макрофотография", en: "Macro"}
     photos: []
   - id: portraits
     title: {ru: "Портреты", en: "Portraits"}
     photos: []
   - id: astro
-    title: {ru: "Астрофото", en: "Astrophotography"}
+    title: {ru: "Астрофотография", en: "Astrophotography"}
+    photos: []
+   - id: landscapes
+    title: {ru: "Пейзажи", en: "landscapes"}
     photos: []
 
 about:
   ru:
     - "Фотографирую птиц и другую дикую природу. Это основное, к чему я возвращаюсь снова и снова."
-    - "Для разнообразия снимаю макро, портреты и звёздное небо. (Замени этот текст своим.)"
+    - "Для разнообразия снимаю макро, портреты и звёздное небо"
   en:
     - "I photograph birds and other wildlife. It is what I keep coming back to."
-    - "For a change I shoot macro, portraits and the night sky. (Replace this text with your own.)"
+    - "For a change I shoot macro, portraits and the night sky"
 
 contacts:
-  - {label: "Email — your@email.com", url: "mailto:your@email.com"}
-  - {label: "Telegram — @username", url: "https://t.me/username"}
+  - {label: "Email — aleks_trubin@mail.ru", url: "mailto:aleks_trubin@mail.ru"}
+  - {label: "Telegram — @alex_trubin", url: "https://t.me/alex_trubin"}
   # - {label: "Instagram — @username", url: "https://instagram.com/username"}
