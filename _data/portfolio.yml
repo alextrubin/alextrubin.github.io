@@ -13,22 +13,14 @@ ui:
 sections:
   - id: wildlife
     title: {ru: "Дикая природа", en: "Wildlife"}
-    photos:
-      - {src: "/images/DSC_6899-1 копия.jpg", ru: "Жёлтая трясогузка", en: "Yellow wagtail"}
-      - {src: "/images/DSC_7043-1 копия.jpg", ru: "Чёрный дрозд", en: "Common blackbird"}
-      # - {src: /images/portfolio/wildlife/03.jpg, full: /images/portfolio/wildlife/full/03.jpg, ru: "Подпись", en: "Caption"}
   - id: macro
     title: {ru: "Макрофотография", en: "Macro"}
-    photos: []
   - id: portraits
     title: {ru: "Портреты", en: "Portraits"}
-    photos: []
   - id: astro
     title: {ru: "Астрофотография", en: "Astrophotography"}
-    photos: []
-   - id: landscapes
-    title: {ru: "Пейзажи", en: "landscapes"}
-    photos: []
+  - id: landscapes
+    title: {ru: "Пейзажи", en: "Landscapes"}
 
 about:
   ru:
