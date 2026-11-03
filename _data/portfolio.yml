@@ -13,14 +13,14 @@ ui:
 sections:
   - id: wildlife
     title: {ru: "Дикая природа", en: "Wildlife"}
+  - id: landscapes
+    title: {ru: "Пейзажи", en: "Landscapes"}
   - id: macro
     title: {ru: "Макрофотография", en: "Macro"}
   - id: portraits
     title: {ru: "Портреты", en: "Portraits"}
   - id: astro
     title: {ru: "Астрофотография", en: "Astrophotography"}
-  - id: landscapes
-    title: {ru: "Пейзажи", en: "Landscapes"}
   - id: others
     title: {ru: "Другие", en: "Others"}
 
