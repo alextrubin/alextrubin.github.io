@@ -4,7 +4,7 @@ og_image: /images/portfolio/og.jpg   # превью для Telegram/почты, 
 ui:
   name:     {ru: "Алексей Трубин", en: "Alexey Trubin"}
   role:     {ru: "фотограф дикой природы", en: "wildlife photographer"}
-  intro:    {ru: "Не устаю восхищаться жизнью во всех её проявлениях и замечать повсюду её красоту", en: "Birds and other wildlife. Sometimes macro, portraits and the night sky."}
+  #intro:    {ru: "Не устаю восхищаться жизнью во всех её проявлениях и замечать повсюду её красоту", en: "Birds and other wildlife. Sometimes macro, portraits and the night sky."}
   about:    {ru: "Обо мне", en: "About"}
   contact:  {ru: "Контакты", en: "Contact"}
   rights:   {ru: "Все права защищены", en: "All rights reserved"}
