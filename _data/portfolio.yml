@@ -7,7 +7,7 @@ ui:
   intro:    {ru: " ", en: " "}
   about:    {ru: "Обо мне", en: "About"}
   contact:  {ru: "Контакты", en: "Contact"}
-  awards:   {ru: "Награды", en: "Awards"}
+  awards:   {ru: "Награды и проекты", en: "Awards & Projects"}
   rights:   {ru: "Все права защищены", en: "All rights reserved"}
   brand:    {ru: "Фотограф Алексей Трубин", en: "Photographer Alexey Trubin"}
 # Первая секция: её первый кадр становится большим кадром вверху страницы.
@@ -37,7 +37,7 @@ awards:
     - title: "35AWARDS"
       event: "Неоднократное попадание в топ-3% тематических конкурсов и во второй этап основного конкурса"
     - title: "Организатор выставки «Большой мир маленьких пернатых»"
-      event: "Персональная выставка в библиотеке г. Лесного и онлайн"
+      event: 'Персональная выставка в библиотеке г. Лесного и <a href="https://www.figma.com/design/psVS5O1d9mAE6W4soO3Zfa/The-Big-World-of-Little-Birds" target="_blank" rel="noopener noreferrer">онлайн</a>'
   en:
     - title: "Winner of the Best Photo category"
       event: "Big Year 2025 · Russian Bird Conservation Union"
@@ -47,6 +47,8 @@ awards:
       event: "The photograph ranked among the contest's top ten"
     - title: "35AWARDS"
       event: "Repeatedly placed in the top 3% of themed contests; reached the second stage of the main contest"
+    - title: "Organizer of the exhibition The Big World of Little Birds"
+      event: 'A solo exhibition at the library in Lesnoy and <a href="https://www.figma.com/design/psVS5O1d9mAE6W4soO3Zfa/The-Big-World-of-Little-Birds" target="_blank" rel="noopener noreferrer">online</a>'
 
 about:
   ru:
