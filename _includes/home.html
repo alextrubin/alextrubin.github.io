@@ -9,6 +9,31 @@
 {% if files.size > 0 %}<section class="sec" id="{{ s.id }}"><h2>{{ s.title[l] }}</h2>
 <div class="g">{% for f in files %}{% if forloop.first and forloop.parentloop.first %}{% continue %}{% endif %}{% assign k = s.id | append: '/' | append: f.name %}{% assign cap = d.captions[k][l] | default: '' %}
 <a href="#" class="lightbox-trigger" data-image="{{ f.path }}" data-caption="{{ cap }}"><img src="{{ f.path }}" alt="{{ cap | default: s.title[l] }}"></a>{% endfor %}</div></section>{% endif %}{% endfor %}
+{% assign award_files = site.static_files | where_exp: "f", "f.path contains '/images/awards/'" | sort: "path" %}
+<section class="sec" id="awards">
+  <h2>{{ d.ui.awards[l] }}</h2>
+  <ul class="awards-list">
+    {% for a in d.awards[l] %}
+      <li><strong>{{ a.title }}</strong><span>{{ a.event }}</span></li>
+    {% endfor %}
+  </ul>
+  {% if award_files.size > 0 %}
+    <div class="awards-marquee" aria-label="{{ d.ui.awards[l] }}">
+      <div class="awards-track">
+        {% for f in award_files %}
+          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="{{ d.ui.awards[l] }}">
+            <img src="{{ f.path }}" alt="{{ d.ui.awards[l] }} — {{ f.name }}" loading="lazy">
+          </a>
+        {% endfor %}
+        {% for f in award_files %}
+          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="{{ d.ui.awards[l] }}" aria-hidden="true" tabindex="-1">
+            <img src="{{ f.path }}" alt="" loading="lazy">
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</section>
 <section class="sec" id="about"><h2>{{ d.ui.about[l] }}</h2>
 <div class="about"><img src="/images/me.jpg" alt="{{ d.ui.name[l] }}"><div>{% for t in d.about[l] %}<p>{{ t }}</p>{% endfor %}</div></div></section>
 <section class="sec" id="contact"><h2>{{ d.ui.contact[l] }}</h2>
