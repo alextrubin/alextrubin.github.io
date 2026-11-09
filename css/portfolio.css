@@ -551,3 +551,66 @@ body.dark-theme .lightbox-image{
   .g a:hover img,
   .g a:focus-visible img{ transform: none; }
 }
+
+
+/* ────────────────────────────────────────────────────────────
+   [14] НАГРАДЫ — сдержанный список и бесконечная лента дипломов
+   ──────────────────────────────────────────────────────────── */
+.awards-list{
+  list-style: none;
+  max-width: 900px;
+  margin: 0 0 34px;
+}
+.awards-list li{
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) 1.2fr;
+  gap: 8px 28px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .9rem;
+}
+.awards-list li:first-child{ border-top: 1px solid var(--line); }
+.awards-list strong{ font-weight: 500; }
+.awards-list span{ color: var(--mute); }
+
+.awards-marquee{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+}
+.awards-track{
+  display: flex;
+  width: max-content;
+  gap: 8px;
+  animation: awards-scroll 48s linear infinite;
+}
+.awards-marquee:hover .awards-track,
+.awards-marquee:focus-within .awards-track{ animation-play-state: paused; }
+.award-document{
+  display: block;
+  flex: 0 0 auto;
+  height: clamp(150px, 19vw, 230px);
+  overflow: hidden;
+  background: var(--line);
+}
+.award-document img{
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+@keyframes awards-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(calc(-50% - 4px)); }
+}
+
+@media (max-width: 800px){
+  .awards-list li{ grid-template-columns: 1fr; gap: 2px; }
+  .award-document{ height: 170px; }
+}
+@media (prefers-reduced-motion: reduce){
+  .awards-track{ animation: none; }
+}
