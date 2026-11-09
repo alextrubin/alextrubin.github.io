@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // --- Переключатель темы ---
-  const toggleBtn = document.getElementById('theme-toggle');
-  if (toggleBtn) {
-    const body = document.body;
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-      body.classList.add('dark-theme');
-      toggleBtn.textContent = '☀️';
-    }
-    toggleBtn.addEventListener('click', function() {
-      body.classList.toggle('dark-theme');
-      const isDark = body.classList.contains('dark-theme');
-      toggleBtn.textContent = isDark ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  }
-
   // --- Лайтбокс ---
   const lightbox = document.getElementById('lightbox');
   if (!lightbox) return; // если на странице нет лайтбокса, выходим
