@@ -44,21 +44,28 @@ document.addEventListener('DOMContentLoaded', function() {
     updateLightbox();
   }
 
-  // Собираем триггеры
+  // Собираем триггеры по независимым группам: фотографии и дипломы не смешиваются.
+  const groups = new Map();
   const triggers = document.querySelectorAll('.lightbox-trigger');
+
   triggers.forEach(function(trigger) {
-    const imgSrc = trigger.getAttribute('data-image');
-    const caption = trigger.getAttribute('data-caption') || '';
-    items.push({ image: imgSrc, caption: caption });
+    const group = trigger.getAttribute('data-lightbox-group') || 'photos';
+    if (!groups.has(group)) groups.set(group, []);
+    const groupItems = groups.get(group);
+    const index = groupItems.length;
+
+    groupItems.push({
+      image: trigger.getAttribute('data-image'),
+      caption: trigger.getAttribute('data-caption') || ''
+    });
 
     trigger.addEventListener('click', function(e) {
       e.preventDefault();
-      const index = Array.from(triggers).indexOf(this);
-      if (index !== -1) {
-        openLightbox(index);
-      }
+      items = groupItems;
+      openLightbox(index);
     });
   });
+
 
   if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
   if (prevBtn) prevBtn.addEventListener('click', showPrev);
