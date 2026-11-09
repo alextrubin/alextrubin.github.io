@@ -21,12 +21,12 @@
     <div class="awards-marquee" aria-label="{{ d.ui.awards[l] }}">
       <div class="awards-track">
         {% for f in award_files %}
-          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="{{ d.ui.awards[l] }}">
+          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="">
             <img src="{{ f.path }}" alt="{{ d.ui.awards[l] }} — {{ f.name }}" loading="lazy">
           </a>
         {% endfor %}
         {% for f in award_files %}
-          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="{{ d.ui.awards[l] }}" aria-hidden="true" tabindex="-1">
+          <a class="award-document lightbox-trigger" href="#" data-lightbox-group="awards" data-image="{{ f.path }}" data-caption="" aria-hidden="true" tabindex="-1">
             <img src="{{ f.path }}" alt="" loading="lazy">
           </a>
         {% endfor %}
