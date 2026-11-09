@@ -23,7 +23,7 @@ sections:
   - id: astro
     title: {ru: "Астрофотография", en: "Astrophotography"}
   - id: others
-    title: {ru: "Другие", en: "Others"}
+    title: {ru: "Другое", en: "Others"}
 
 
 awards:
