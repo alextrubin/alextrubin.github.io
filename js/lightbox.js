@@ -67,6 +67,50 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+  // Свайпы на телефонах и горизонтальные жесты трекпада.
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let wheelDistance = 0;
+  let wheelResetTimer = null;
+  let wheelLocked = false;
+
+  lightbox.addEventListener('touchstart', function(e) {
+    if (!lightbox.classList.contains('active') || !e.touches.length) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchend', function(e) {
+    if (!lightbox.classList.contains('active') || !e.changedTouches.length) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+
+    // Реагируем только на уверенный горизонтальный свайп.
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+      if (dx < 0) showNext();
+      else showPrev();
+    }
+  }, { passive: true });
+
+  // На MacBook и других ноутбуках трекпад обычно отправляет deltaX.
+  lightbox.addEventListener('wheel', function(e) {
+    if (!lightbox.classList.contains('active') || Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
+    e.preventDefault();
+    if (wheelLocked) return;
+
+    wheelDistance += e.deltaX;
+    clearTimeout(wheelResetTimer);
+    wheelResetTimer = setTimeout(function() { wheelDistance = 0; }, 180);
+
+    if (Math.abs(wheelDistance) >= 55) {
+      if (wheelDistance > 0) showNext();
+      else showPrev();
+      wheelDistance = 0;
+      wheelLocked = true;
+      setTimeout(function() { wheelLocked = false; }, 420);
+    }
+  }, { passive: false });
+
   if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
   if (prevBtn) prevBtn.addEventListener('click', showPrev);
   if (nextBtn) nextBtn.addEventListener('click', showNext);
