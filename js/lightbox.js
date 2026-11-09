@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lightboxImg.src = item.image;
     lightboxImg.alt = item.caption || '';
     lightboxCaption.textContent = item.caption || '';
+    lightboxCaption.hidden = !item.caption;
   }
 
   function closeLightbox() {
