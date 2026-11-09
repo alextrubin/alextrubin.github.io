@@ -29,13 +29,13 @@ sections:
 awards:
   ru:
     - title: "Победитель номинации «Лучшее фото»"
-      event: "«Большой год — 2025» · Союз охраны птиц России"
+      event: "«Большой год 2025» · Союз охраны птиц России"
     - title: "Полуфиналист специальной номинации"
-      event: "«Природа и биоразнообразие атомных городов» · фотоконкурс «Золотая черепаха — 2025»"
-    - title: "Победитель конкурса «Вики любит памятники — 2024»"
+      event: "«Природа и биоразнообразие атомных городов» · фотоконкурс «Золотая черепаха 2025»"
+    - title: "Победитель конкурса «Вики любит памятники 2024»"
       event: "Работа вошла в десятку лучших"
     - title: "35AWARDS"
-      event: "Неоднократное попадание в топ-3% тематических конкурсов; во втором этапе основного конкурса — топ-46%"
+      event: "Неоднократное попадание в топ-3% тематических конкурсов и во второй этап основного конкурса"
   en:
     - title: "Winner of the Best Photo category"
       event: "Big Year 2025 · Russian Bird Conservation Union"
@@ -44,7 +44,7 @@ awards:
     - title: "Winner of Wiki Loves Monuments 2024"
       event: "The photograph ranked among the contest's top ten"
     - title: "35AWARDS"
-      event: "Repeatedly placed in the top 3% of themed contests; reached the second stage of the main contest (top 46%)"
+      event: "Repeatedly placed in the top 3% of themed contests; reached the second stage of the main contest"
 
 about:
   ru:
