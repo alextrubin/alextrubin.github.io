@@ -614,3 +614,22 @@ body.dark-theme .lightbox-image{
 @media (prefers-reduced-motion: reduce){
   .awards-track{ animation: none; }
 }
+
+
+/* Ссылка на онлайн-версию выставки */
+.awards-list span a{
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.awards-list span a:hover{ opacity: .72; }
+.lightbox-caption[hidden]{ display: none; }
+
+/* Не допускаем горизонтальную прокрутку страницы на узких экранах.
+   Внутреннее меню и лента дипломов сохраняют собственное поведение. */
+html, body{
+  max-width: 100%;
+  overflow-x: clip;
+}
