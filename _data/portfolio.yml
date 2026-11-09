@@ -7,6 +7,7 @@ ui:
   intro:    {ru: " ", en: " "}
   about:    {ru: "Обо мне", en: "About"}
   contact:  {ru: "Контакты", en: "Contact"}
+  awards:   {ru: "Награды", en: "Awards"}
   rights:   {ru: "Все права защищены", en: "All rights reserved"}
   brand:    {ru: "Фотограф Алексей Трубин", en: "Photographer Alexey Trubin"}
 # Первая секция: её первый кадр становится большим кадром вверху страницы.
@@ -23,6 +24,27 @@ sections:
     title: {ru: "Астрофотография", en: "Astrophotography"}
   - id: others
     title: {ru: "Другие", en: "Others"}
+
+
+awards:
+  ru:
+    - title: "Победитель номинации «Лучшее фото»"
+      event: "«Большой год — 2025» · Союз охраны птиц России"
+    - title: "Полуфиналист специальной номинации"
+      event: "«Природа и биоразнообразие атомных городов» · фотоконкурс «Золотая черепаха — 2025»"
+    - title: "Победитель конкурса «Вики любит памятники — 2024»"
+      event: "Работа вошла в десятку лучших"
+    - title: "35AWARDS"
+      event: "Неоднократное попадание в топ-3% тематических конкурсов; во втором этапе основного конкурса — топ-46%"
+  en:
+    - title: "Winner of the Best Photo category"
+      event: "Big Year 2025 · Russian Bird Conservation Union"
+    - title: "Semi-finalist in the special category"
+      event: "Nature and Biodiversity of Nuclear Cities · Golden Turtle 2025"
+    - title: "Winner of Wiki Loves Monuments 2024"
+      event: "The photograph ranked among the contest's top ten"
+    - title: "35AWARDS"
+      event: "Repeatedly placed in the top 3% of themed contests; reached the second stage of the main contest (top 46%)"
 
 about:
   ru:
