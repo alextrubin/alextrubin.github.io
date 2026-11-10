@@ -262,6 +262,7 @@
   var dragVelocity = 0;
   var suppressClick = false;
   var decay = 3.2; // скорость затухания дополнительной инерции
+  var dragSensitivity = 5; // во сколько раз быстрее лента следует за пальцем
 
   function measure(){
     period = track.scrollWidth / 2;
@@ -351,8 +352,8 @@
     if (moved){
       var now = performance.now();
       var dt = Math.max((now - lastTime) / 1000, 0.001);
-      position += dx;
-      dragVelocity = dx / dt;
+      position += dx * dragSensitivity;
+      dragVelocity = (dx / dt) * dragSensitivity;
       lastX = e.clientX;
       lastTime = now;
       normalize();
@@ -369,7 +370,7 @@
     if (wasMoved){
       // Ограничиваем импульс, чтобы даже очень быстрый свайп
       // оставался управляемым и не уносил ленту надолго.
-      extraSpeed = Math.max(-1800, Math.min(1800, dragVelocity));
+      extraSpeed = Math.max(-9000, Math.min(9000, dragVelocity));
       suppressClick = true;
       setTimeout(function(){ suppressClick = false; }, 350);
     }
