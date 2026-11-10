@@ -505,6 +505,43 @@ body.dark-theme .lightbox-image{
 }
 
 
+/* Узкая фактическая ширина: сохраняем доступ к меню и кнопке темы,
+   даже если мобильный браузер запрашивает «Версию для ПК». */
+@media (max-width: 1200px){
+  .top{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand theme"
+      "nav   nav";
+    align-items: center;
+    row-gap: 12px;
+    padding: 16px var(--pad) 12px;
+  }
+  .brand{ grid-area: brand; font-size: 1.05rem; }
+  .theme-btn{ grid-area: theme; width: 34px; height: 34px; font-size: .95rem; }
+
+  .nav-menu{
+    grid-area: nav;
+    min-width: 0;
+    margin: 0 calc(-1 * var(--pad));
+    padding: 4px var(--pad) 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-top: 1px solid var(--line);
+  }
+  .nav-menu::-webkit-scrollbar{ display: none; }
+  .nav-menu ul{
+    flex-wrap: nowrap;
+    width: max-content;
+    gap: 22px;
+  }
+  .nav-menu a{ font-size: .72rem; white-space: nowrap; }
+}
+
+
 /* ────────────────────────────────────────────────────────────
    [12] УЗКИЕ ЭКРАНЫ ≤ 480px
    Тонкая доводка под небольшие телефоны.
