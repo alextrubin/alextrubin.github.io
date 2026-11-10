@@ -669,3 +669,28 @@ html, body{
   max-width: 100%;
   overflow-x: clip;
 }
+
+
+/* Уведомление о копировании email */
+.copy-toast{
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 200;
+  padding: 11px 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: .82rem;
+  letter-spacing: .02em;
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+  opacity: 0;
+  transform: translate(-50%, 10px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.copy-toast.visible{
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
