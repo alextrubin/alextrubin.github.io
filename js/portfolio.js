@@ -230,3 +230,173 @@
     if (el) io.observe(el);
   }
 })();
+
+
+
+/* ────────────────────────────────────────────────────────────
+   [4] ЛЕНТА ДИПЛОМОВ — автоматическое движение и инерционный свайп
+   ──────────────────────────────────────────────────────────── */
+(function(){
+  var marquee = document.querySelector('.awards-marquee');
+  var track = marquee && marquee.querySelector('.awards-track');
+  if (!marquee || !track) return;
+
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  var baseSpeed = -track.scrollWidth / 2 / 48; // исходный ход влево, 48 секунд на цикл
+  var position = 0;
+  var extraSpeed = 0;
+  var period = 0;
+  var lastFrame = 0;
+  var raf = 0;
+  var paused = false;
+  var dragging = false;
+  var moved = false;
+  var pointerId = null;
+  var startX = 0;
+  var startY = 0;
+  var lastX = 0;
+  var lastTime = 0;
+  var dragVelocity = 0;
+  var suppressClick = false;
+  var decay = 3.2; // скорость затухания дополнительной инерции
+
+  function measure(){
+    period = track.scrollWidth / 2;
+    if (period > 0) baseSpeed = -period / 48;
+    normalize();
+    render();
+  }
+
+  function normalize(){
+    if (!period) return;
+    position = ((position % period) + period) % period;
+    position = position === 0 ? 0 : position - period;
+  }
+
+  function render(){
+    track.style.transform = 'translate3d(' + position + 'px, 0, 0)';
+  }
+
+  function stop(){
+    if (raf) cancelAnimationFrame(raf);
+    raf = 0;
+    lastFrame = 0;
+  }
+
+  function frame(now){
+    raf = 0;
+    if (paused || document.hidden || !period) return;
+    if (lastFrame){
+      var dt = Math.min((now - lastFrame) / 1000, 0.05);
+      position += (baseSpeed + extraSpeed) * dt;
+      extraSpeed *= Math.exp(-decay * dt);
+      if (Math.abs(extraSpeed) < 0.15) extraSpeed = 0;
+      normalize();
+      render();
+    }
+    lastFrame = now;
+    raf = requestAnimationFrame(frame);
+  }
+
+  function play(){
+    if (paused || document.hidden || dragging || raf) return;
+    lastFrame = 0;
+    raf = requestAnimationFrame(frame);
+  }
+
+  function setPaused(value){
+    paused = value;
+    if (paused) stop();
+    else play();
+  }
+
+  // На компьютере сохраняем прежнее поведение: наведение мыши
+  // или клавиатурный фокус внутри ленты останавливает движение.
+  marquee.addEventListener('mouseenter', function(){ setPaused(true); });
+  marquee.addEventListener('mouseleave', function(){ setPaused(false); });
+  marquee.addEventListener('focusin', function(){ setPaused(true); });
+  marquee.addEventListener('focusout', function(e){
+    if (!marquee.contains(e.relatedTarget)) setPaused(false);
+  });
+
+  // Свайп только пальцем/пером: обычное управление мышью и hover
+  // остаются такими же, как раньше.
+  marquee.addEventListener('pointerdown', function(e){
+    if (e.pointerType === 'mouse' || paused || !period) return;
+    dragging = true;
+    moved = false;
+    pointerId = e.pointerId;
+    startX = lastX = e.clientX;
+    startY = e.clientY;
+    lastTime = performance.now();
+    dragVelocity = 0;
+    stop();
+  });
+
+  marquee.addEventListener('pointermove', function(e){
+    if (!dragging || e.pointerId !== pointerId) return;
+    var dx = e.clientX - lastX;
+    var dy = e.clientY - startY;
+
+    if (!moved){
+      var totalX = e.clientX - startX;
+      if (Math.abs(totalX) < 5 || Math.abs(totalX) < Math.abs(dy)) return;
+      moved = true;
+      try { marquee.setPointerCapture(pointerId); } catch(err) {}
+    }
+
+    if (moved){
+      var now = performance.now();
+      var dt = Math.max((now - lastTime) / 1000, 0.001);
+      position += dx;
+      dragVelocity = dx / dt;
+      lastX = e.clientX;
+      lastTime = now;
+      normalize();
+      render();
+      if (e.cancelable) e.preventDefault();
+    }
+  }, {passive:false});
+
+  function finishDrag(e){
+    if (!dragging || (e && e.pointerId !== pointerId)) return;
+    var wasMoved = moved;
+    dragging = false;
+    pointerId = null;
+    if (wasMoved){
+      // Ограничиваем импульс, чтобы даже очень быстрый свайп
+      // оставался управляемым и не уносил ленту надолго.
+      extraSpeed = Math.max(-1800, Math.min(1800, dragVelocity));
+      suppressClick = true;
+      setTimeout(function(){ suppressClick = false; }, 350);
+    }
+    play();
+  }
+
+  marquee.addEventListener('pointerup', finishDrag);
+  marquee.addEventListener('pointercancel', finishDrag);
+  marquee.addEventListener('lostpointercapture', finishDrag);
+  marquee.addEventListener('click', function(e){
+    if (!suppressClick) return;
+    e.preventDefault();
+    e.stopPropagation();
+    suppressClick = false;
+  }, true);
+
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden) stop();
+    else play();
+  });
+
+  if ('ResizeObserver' in window){
+    new ResizeObserver(measure).observe(track);
+  } else {
+    window.addEventListener('resize', measure);
+  }
+
+  measure();
+  play();
+})();
