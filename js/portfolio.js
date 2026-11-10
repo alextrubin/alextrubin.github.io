@@ -401,3 +401,57 @@
   measure();
   play();
 })();
+
+
+/* ────────────────────────────────────────────────────────────
+   [5] КОПИРОВАНИЕ EMAIL
+   ──────────────────────────────────────────────────────────── */
+(function(){
+  var link = document.querySelector('.copy-email');
+  if (!link) return;
+
+  var toast = document.createElement('div');
+  toast.className = 'copy-toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  document.body.appendChild(toast);
+
+  var timer;
+  function showToast(message){
+    toast.textContent = message;
+    toast.classList.add('visible');
+    clearTimeout(timer);
+    timer = setTimeout(function(){ toast.classList.remove('visible'); }, 2200);
+  }
+
+  function fallbackCopy(value){
+    var input = document.createElement('textarea');
+    input.value = value;
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    var success = false;
+    try { success = document.execCommand('copy'); } catch(e) {}
+    input.remove();
+    return success;
+  }
+
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    var email = link.getAttribute('data-email');
+    var message = document.documentElement.lang === 'en'
+      ? 'Email address copied'
+      : 'Адрес почты скопирован';
+
+    if (navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(email).then(function(){
+        showToast(message);
+      }).catch(function(){
+        showToast(fallbackCopy(email) ? message : (document.documentElement.lang === 'en' ? 'Could not copy email' : 'Не удалось скопировать адрес'));
+      });
+    } else {
+      showToast(fallbackCopy(email) ? message : (document.documentElement.lang === 'en' ? 'Could not copy email' : 'Не удалось скопировать адрес'));
+    }
+  });
+})();
