@@ -621,10 +621,12 @@ body.dark-theme .lightbox-image{
   display: flex;
   width: max-content;
   gap: 8px;
-  animation: awards-scroll 48s linear infinite;
+  will-change: transform;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.awards-marquee:hover .awards-track,
-.awards-marquee:focus-within .awards-track{ animation-play-state: paused; }
+.award-document{ -webkit-user-drag: none; }
 .award-document{
   display: block;
   flex: 0 0 auto;
@@ -639,17 +641,12 @@ body.dark-theme .lightbox-image{
   max-width: none;
   object-fit: contain;
 }
-@keyframes awards-scroll{
-  from{ transform: translateX(0); }
-  to{ transform: translateX(calc(-50% - 4px)); }
-}
-
 @media (max-width: 800px){
   .awards-list li{ grid-template-columns: 1fr; gap: 2px; }
   .award-document{ height: 170px; }
 }
 @media (prefers-reduced-motion: reduce){
-  .awards-track{ animation: none; }
+  .awards-track{ transform: none !important; }
 }
 
 
