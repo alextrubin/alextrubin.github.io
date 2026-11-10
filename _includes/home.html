@@ -37,4 +37,4 @@
 <section class="sec" id="about"><h2>{{ d.ui.about[l] }}</h2>
 <div class="about"><img src="/images/me.jpg" alt="{{ d.ui.name[l] }}"><div>{% for t in d.about[l] %}<p>{{ t }}</p>{% endfor %}</div></div></section>
 <section class="sec" id="contact"><h2>{{ d.ui.contact[l] }}</h2>
-<div class="contacts">{% for c in d.contacts %}<a href="{{ c.url }}">{{ c.label }}</a>{% endfor %}</div></section>
+<div class="contacts">{% for c in d.contacts %}<a href="{{ c.url }}"{% if forloop.first %} class="copy-email" data-email="aleks_trubin@mail.ru"{% endif %}>{{ c.label }}</a>{% endfor %}</div></section>
