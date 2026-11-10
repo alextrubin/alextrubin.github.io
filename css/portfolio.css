@@ -165,7 +165,9 @@ button{ font-family:inherit; }
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition);
 }
-.theme-btn:hover{ border-color: var(--fg); }
+@media (hover: hover) and (pointer: fine){
+  .theme-btn:hover{ border-color: var(--fg); }
+}
 
 
 /* ────────────────────────────────────────────────────────────
